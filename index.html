@@ -1,1 +1,250 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/logo.svg"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>DropsLook</title><script defer="defer" src="/static/js/main.a5a02f59.js"></script><link href="/static/css/main.65965b22.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ТМ «Мар’ян»</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg" href="./images/logo.svg">
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="header">
+      <div class="header-container container">
+        <div id="burger-icon" class="burger-menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu">
+          <div class="burger-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+
+          <nav class="header-navigation mobile">
+            <ul class="header-navigation-list mobile">
+              <li class="header-navigation-list-item mobile">
+                <a href="/">Головна</a>
+              </li>
+              <li class="header-navigation-list-item mobile">
+                <a href="/about-us">Про нас</a>
+              </li>
+              <li class="header-navigation-list-item mobile">
+                <a href="/products">Продукція</a>
+              </li>
+              <li class="header-navigation-list-item mobile">
+                <a href="/contacts">Контакти</a>
+              </li>
+              <li class="header-navigation-list-item mobile">
+                <a href="/shops">Магазини</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <nav class="header-navigation">
+          <ul class="header-navigation-list">
+            <li class="header-navigation-list-item">
+              <a href="/">Головна</a>
+            </li>
+            <li class="header-navigation-list-item">
+              <a href="/about-us">Про нас</a>
+            </li>
+            <li class="header-navigation-list-item">
+              <a href="/products">Продукція</a>
+            </li>
+            <li class="header-navigation-list-item">
+              <a href="/contacts">Контакти</a>
+            </li>
+            <li class="header-navigation-list-item">
+              <a href="/shops">Магазини</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-content-wrapper">
+          <div class="header-description-wrapper">
+            <img class="header-logo" src="images/logo.svg" alt="мар'ян логотип" width="312" height="225" />
+            <b class="header-sub-logo">Житомир</b>
+            <p class="header-mark-description pre-variant">
+              З дня заснування у 2001 році <br> ТМ «Мар’ян» набула бездоганної репутації у сфері виробництва м’ясних
+              виробів.
+
+              Головним нашим пріоритетом є турбота про споживача, що проявляється у використанні лише свіжої та виключно
+              якісної сировини для виробництва м’ясних виробів ТМ «Мар’ян».
+
+              У складі нашої продукції тільки м'ясо, сіль та спеції. Якість наших виробів здатна задовільнити
+              найвибагливішого споживача.
+            </p>
+          </div>
+
+          <div class="header-pictures-wrapper">
+            <img src="./images/header/main-pictures.png" alt="Ковбаси, сосиски, спеції" width="1210" height="1401" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- features -->
+  <section class="features-section">
+    <div class="features-wrapper container">
+      <div class="feature-item-wrapper">
+        <div class="feature-item">
+          <strong class="feature-title">Смачно</strong>
+          <img class="feature-picture" src="./images/features/taste-feature.svg" alt="" />
+          <p class="feature-description">
+            Чистий смак натурального м’яса, аромат копчення та пікантність трав.
+            У складі тільки м'ясо, сіль та спеції.
+          </p>
+        </div>
+      </div>
+
+      <div class="feature-item-wrapper logo">
+        <div class="feature-item logo">
+          <img class='feature-logo' src="./images/features/logo.png" width="320" height="225" alt="" />
+        </div>
+      </div>
+
+      <div class="feature-item-wrapper">
+        <div class="feature-item">
+          <strong class="feature-title">Контроль якості</strong>
+          <img class="feature-picture" src="./images/features/control-feature.svg" alt="" />
+          <p class="feature-description">
+            Ми використовуємо тільки свіжу та екологічну сировину, що
+            підтверджено відповідними сертифікатами та ветеринарними
+            свідоцтвами.
+          </p>
+        </div>
+      </div>
+
+      <div class="feature-item-wrapper">
+        <div class="feature-item">
+          <strong class="feature-title">Турбота про споживача</strong>
+          <img class="feature-picture" src="./images/features/care-feature.svg" alt="" />
+          <p class="feature-description">
+            Ми завжди цікавимося думкою споживача, проводимо дослідження та
+            дегустації. Ми з великою повагою ставимося до кожного звернення,
+            аналізуючи ваші пропозиції, ми постійно вдосконалюємось!
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- products -->
+  <section class="products-section">
+    <div class="products-wrapper container">
+      <div class="product-item">
+        <h3 class="product-title">
+          Ковбаси <br />
+          варені
+        </h3>
+        <img src="./images/products/milk-sausages.png" width="436" height="550" alt="Молочні ковбаси"
+          class="product-picture first" />
+      </div>
+      <div class="product-item">
+        <h3 class="product-title">
+          Сосиски та <br />
+          сардельки
+        </h3>
+        <img src="./images/products/two-sausages.png" alt="" class="product-picture" />
+      </div>
+      <div class="product-item">
+        <h3 class="product-title">
+          Ковбаси <br />
+          напівкопчені <br />
+          та сирокопчені
+        </h3>
+        <img src="./images/products/frankfurter.png" alt="" class="product-picture" />
+      </div>
+      <div class="product-item">
+        <h3 class="product-title">
+          Вироби із м'яса <br />
+          копчено-запечені
+        </h3>
+        <img src="./images/products/meat.png" alt="" class="product-picture" />
+      </div>
+    </div>
+  </section>
+
+  <!-- gallery -->
+  <section class="gallery-section">
+    <div class="gallery-wrapper">
+      <div class="swiper gallery-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+
+          <div class="swiper-slide gallery-slide">
+            <img src="./images/gallery/img-1.png" alt="" />
+          </div>
+
+          <div class="swiper-slide gallery-slide">
+            <img src="./images/gallery/img-1.png" alt="" />
+          </div>
+          <div class="swiper-slide gallery-slide">
+            <img src="./images/gallery/img-2.png" alt="" />
+          </div>
+          <div class="swiper-slide gallery-slide">
+            <img src="./images/gallery/img-3.png" alt="" />
+          </div>
+          <div class="swiper-slide gallery-slide">
+            <img src="./images/gallery/img-1.png" alt="" />
+          </div>
+
+          <div class="swiper-slide gallery-slide">
+            <img src="./images/gallery/img-1.png" alt="" />
+          </div>
+
+          <div class="swiper-slide gallery-slide">
+            <img src="./images/gallery/img-1.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-footer">
+        <div class="gallery-footer-container container">
+          <strong class="gallery-footer-title">пров. Телефонний, 3 <br />
+            (р-н Польова, біля ЦНАПу)</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contacts -->
+  <section class="contacts-section container">
+    <div class="contacts-wrapper container">
+      <div class="contact-item-wrapper">
+        <strong class="contact-title">адреса виробництва:</strong>
+        <p class="contact-description">м.Житомир <br />пров. Телефонний, 3</p>
+      </div>
+
+      <div class="contact-item-wrapper">
+        <strong class="contact-title small">телефон: <br />
+          <a class="contact-link">067 412 70 33</a><br />
+          <a class="contact-link lowercase">maryanzakaz@ukr.net</a></strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-content-wrapper container">
+      <img src="./images/features/logo.png" class="footer-logo" width="250" height="150" alt="Логотип Мар'ян" />
+      <b class="certificate-label">EST 2001</b>
+    </div>
+
+  </footer>
+  <script src="./libraries/swiper/swiper.min.js"></script>
+  <script src="./scripts/slider.js"></script>
+</body>
+
+</html>

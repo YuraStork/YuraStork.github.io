@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "NAMU";
+  font-weight: 400;
+  src: local("NAMU"), url("./fonts/namu/NAMU-1910.eot") format("opentype"),
+    url("./fonts/namu/NAMU-1910.woff") format("woff"),
+    url("./fonts/namu/NAMU-1910.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Arsenal";
+  font-weight: 700;
+  src: local("Arsenal"),
+    url("./fonts/arsenal/Arsenal-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  src: local("Montserrat"),
+    url("./fonts/montserrat-roman/Montserrat-ExtraBold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  src: local("Montserrat"),
+    url("./fonts/montserrat-roman/Montserrat-Regular.otf") format("truetype");
+}

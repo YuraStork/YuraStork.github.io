@@ -1,0 +1,66 @@
+.gallery-swiper {
+  margin-bottom: 40px;
+  overflow-y: visible;
+  max-width: 1920px;
+  height: 350px;
+}
+
+.gallery-slide {
+  transition: all .2s linear;
+  transform-origin: top right;
+  overflow: hidden;
+  height: auto;
+  width: auto;
+}
+
+.gallery-slide > img {
+  border-radius: 40px;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.gallery-footer {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 50px 20px;
+}
+
+.gallery-footer-container {
+  justify-content: flex-end;
+  display: flex;
+}
+
+.gallery-footer-title {
+  font-family: "Montserrat";
+  text-align: center;
+  text-align: left;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+@media screen and (max-width: 1200px) {
+  .gallery-swiper {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .gallery-swiper {
+    height: 250px;
+  }
+
+  .gallery-footer {
+    padding: 25px 20px;
+    justify-content: center;
+  }
+
+  .gallery-footer-title {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .gallery-slide > img {
+    border-radius: 10px;
+  }
+}
