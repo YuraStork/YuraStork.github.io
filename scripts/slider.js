@@ -2,9 +2,14 @@
   new Swiper(".swiper", {
     grabCursor: true,
     slideToClickedSlide: true,
-
+    
     keyboard: {
       enabled: true,
+    },
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
 
     breakpoints: {
@@ -42,7 +47,7 @@
       },
 
       1700: {
-        initialSlide: 1,
+        initialSlide: 2,
         slidesPerView: 4,
         spaceBetween: 50,
         centeredSlides: true,
@@ -52,10 +57,11 @@
 
   const burgerIcon = document.querySelector("#burger-icon");
   const mobileMenu = document.querySelector("#mobile-menu");
-  const body = document.querySelector('body');
+  const body = document.querySelector("body");
 
   burgerIcon.addEventListener("click", () => {
     mobileMenu.classList.toggle("visible");
-    body.classList.toggle('freezed')
+    burgerIcon.classList.toggle('close');
+    body.classList.toggle("freezed");
   });
 })();
