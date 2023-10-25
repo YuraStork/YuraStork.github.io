@@ -102,7 +102,7 @@ ol {
   color: var(--primary);
   letter-spacing: 10px;
   padding-top: 10px;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 18px;
 }
 
@@ -521,7 +521,7 @@ ol {
 .gallery-footer-title {
   font-family: "Montserrat";
   text-align: left;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 50px;
 }
 
@@ -607,7 +607,7 @@ ol {
 .contact-link {
   font-family: "Montserrat";
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 50px;
   width: 100%;
   max-width: 680px;

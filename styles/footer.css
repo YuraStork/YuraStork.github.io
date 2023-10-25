@@ -1,0 +1,29 @@
+.footer {
+  background-color: var(--primary);
+  padding: 50px 0;
+}
+
+.footer-content-wrapper {
+  justify-content: space-between;
+  align-items: flex-end;
+  display: flex;
+  gap: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    padding: 25px 0;
+  }
+
+  .footer-logo {
+    width: 150px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer-content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,274 @@
+/* header */
+
+.header {
+  position: relative;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.header-container {
+  flex-direction: column;
+  display: flex;
+}
+
+.header-content-wrapper {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+
+.header-navigation {
+  align-self: flex-end;
+}
+
+.header-sub-logo {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  color: var(--primary);
+  letter-spacing: 10px;
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.header-navigation-list {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.header-navigation-list.mobile {
+  flex-direction: column;
+}
+
+.header-pictures-wrapper {
+  width: 1210px;
+  height: 1201px;
+  position: absolute;
+  right: 0;
+}
+
+.header-pictures-wrapper > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* mobile */
+.mobile-menu {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: var(--white);
+  top: -100vh;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  overflow: hidden;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.mobile-menu.visible {
+  opacity: 1;
+  bottom: 0;
+  top: 0;
+}
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  transition: all 0.2s;
+  gap: 6px;
+  width: 40px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  z-index: 11;
+}
+
+.burger-menu:active {
+  transform: scale(0.8);
+}
+
+.burger-menu.close > div{
+  transition: all .3s;
+}
+
+.burger-menu.close > div:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.close > div:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.burger-menu.close > div:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+.burger-menu > div {
+  background-color: var(--primary);
+  height: 3px;
+  width: 100%;
+}
+
+.header-navigation-list-item > a {
+  color: var(--primary);
+  transition: all 0.1s;
+  white-space: nowrap;
+  padding: 55px 10px;
+  font-family: NAMU;
+  font-weight: 400;
+  font-size: 18px;
+  display: block;
+}
+
+.header-navigation-list-item.mobile > a {
+  text-align: center;
+  padding: 10px;
+}
+
+.header-navigation-list-item:not(.mobile) > a:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.header-description-wrapper {
+  justify-content: center;
+  flex-basis: 454px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  position: relative;
+}
+
+.header-mark-description {
+  color: var(--primary);
+  font-family: NAMU;
+  line-height: 120%;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 1600px) {
+  .header-pictures-wrapper {
+    width: 1010px;
+    height: 1201px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .header-pictures-wrapper {
+    width: 810px;
+    height: 1201px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header-pictures-wrapper {
+    width: 650px;
+    height: 880px;
+  }
+
+  .header-logo {
+    width: 250px;
+    height: auto;
+  }
+
+  .header-description-wrapper {
+    flex-basis: 420px;
+  }
+
+  .header-mark-description {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header-description-wrapper {
+    flex-basis: 410px;
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.96);
+    text-shadow: 0px 0px 10px white;
+    padding: 30px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+      rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    border-radius: 5px;
+  }
+  .header-content-wrapper {
+    justify-content: center;
+  }
+
+  .header-navigation {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header-pictures-wrapper {
+    width: 750px;
+    height: 1050px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .burger-menu {
+    display: flex;
+  }
+
+  .header {
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+  }
+
+  .header-logo {
+    width: 250px;
+    height: auto;
+  }
+
+  .header-sub-logo {
+    font-size: 14px;
+  }
+
+  .header-pictures-wrapper {
+    display: none;
+  }
+
+  .header-mark-description {
+    max-width: 360px;
+    white-space: pre-line;
+    font-size: 20px;
+  }
+
+  .header-mark-description br {
+    display: none;
+  }
+
+  .header-content-wrapper {
+    justify-content: center;
+    margin-top: 60px;
+  }
+
+  .header-navigation:not(.mobile) {
+    display: none;
+    align-self: center;
+  }
+
+  .header {
+    padding: 50px 0;
+  }
+
+  .header-description-wrapper {
+    background-color: transparent;
+    border-radius: none;
+    box-shadow: none;
+    flex-basis: 380px;
+    padding: 0;
+  }
+}

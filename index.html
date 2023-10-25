@@ -105,7 +105,7 @@
 
       <div class="feature-item-wrapper logo">
         <div class="feature-item logo">
-          <img class='feature-logo' src="./images/features/logo.png" width="320" height="225" alt="" />
+          <img class='feature-logo' src="./images/features/logo.png" width="325" height="200" alt="" />
         </div>
       </div>
 
@@ -178,31 +178,32 @@
       <div class="swiper gallery-swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
-          <!-- Slides -->
-
           <div class="swiper-slide gallery-slide">
-            <img src="./images/gallery/img-1.png" alt="" />
+            <picture>
+              <source srcset="./images/gallery/img-1.webp" type="image/webp">
+              <img src="./images/gallery/img-1.jpg" width="450" height="350" alt="Фото магазину">
+            </picture>
           </div>
 
           <div class="swiper-slide gallery-slide">
-            <img src="./images/gallery/img-2.png" alt="" />
-          </div>
-          <div class="swiper-slide gallery-slide">
-            <img src="./images/gallery/img-2.png" alt="" />
-          </div>
-          <div class="swiper-slide gallery-slide">
-            <img src="./images/gallery/img-3.png" alt="" />
-          </div>
-          <div class="swiper-slide gallery-slide">
-            <img src="./images/gallery/img-1.png" alt="" />
+            <picture>
+              <source srcset="./images/gallery/img-2.webp" type="image/webp">
+              <img src="./images/gallery/img-2.jpg" width="450" height="350" alt="Фото магазину">
+            </picture>
           </div>
 
           <div class="swiper-slide gallery-slide">
-            <img src="./images/gallery/img-1.png" alt="" />
+            <picture>
+              <source srcset="./images/gallery/img-3.webp" type="image/webp">
+              <img src="./images/gallery/img-3.jpg" width="450" height="350" alt="Фото магазину">
+            </picture>
           </div>
 
           <div class="swiper-slide gallery-slide">
-            <img src="./images/gallery/img-1.png" alt="" />
+            <picture>
+              <source srcset="./images/gallery/img-4.webp" type="image/webp">
+              <img src="./images/gallery/img-4.jpg" width="450" height="350" alt="Фото магазину">
+            </picture>
           </div>
         </div>
 
@@ -232,23 +233,22 @@
     </div>
   </section>
 
-  <!-- contacts -->
   <section class="contacts-section container">
     <div class="contacts-wrapper container">
       <div class="contact-item-wrapper">
         <strong class="contact-title">адреса виробництва:</strong>
-        <p class="contact-description">м.Житомир <br />пров. Телефонний, 3</p>
+        <p class="contact-description"><a href='https://maps.app.goo.gl/WDfyPBJUgeUsGAmx7'>м.Житомир <br />пров.
+            Телефонний, 3</a></p>
       </div>
 
       <div class="contact-item-wrapper">
         <strong class="contact-title small">телефон:
-          <a class="contact-link">067 412 70 33</a>
-          <a class="contact-link lowercase">maryanzakaz@ukr.net</a></strong>
+          <a href="tel:0674127033" class="contact-link">067 412 70 33</a>
+          <a href="mailto:maryanzakaz@ukr.net" class="contact-link lowercase">maryanzakaz@ukr.net</a></strong>
       </div>
     </div>
   </section>
 
-  <!-- footer -->
   <footer class="footer">
     <div class="footer-content-wrapper container">
       <img src="./images/features/logo.png" class="footer-logo" width="250" height="150" alt="Логотип Мар'ян" />
@@ -256,6 +256,7 @@
     </div>
 
   </footer>
+
   <script src="./libraries/swiper/swiper.min.js"></script>
   <script src="./scripts/slider.js"></script>
 </body>

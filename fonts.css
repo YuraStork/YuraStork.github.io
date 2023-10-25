@@ -1,28 +1,43 @@
 @font-face {
   font-family: "NAMU";
   font-weight: 400;
-  src: local("NAMU"), url("./fonts/namu/NAMU-1910.eot") format("opentype"),
-    url("./fonts/namu/NAMU-1910.woff") format("woff"),
-    url("./fonts/namu/NAMU-1910.woff2") format("woff2");
+  src: local("NAMU"), url("./fonts/namu/NAMU-1910.woff") format("woff"),
+    url("./fonts/namu/NAMU-1910.woff2") format("woff2"),
+    url("./fonts/namu/NAMU-1910.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Arsenal";
   font-weight: 700;
-  src: local("Arsenal"),
-    url("./fonts/arsenal/Arsenal-Bold.ttf") format("truetype");
+  src: local("Arsenal-Bold"),
+    url("./fonts/arsenal/Arsenal-Bold.woff2") format("woff2"),
+    url("./fonts/arsenal/Arsenal-Bold.ttf") format("truetype"),
+    url("./fonts/arsenal/Arsenal-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Montserrat";
-  font-weight: 600;
-  src: local("Montserrat"),
-    url("./fonts/montserrat-roman/Montserrat-ExtraBold.otf") format("truetype");
+  font-weight: 800;
+  src: local("Montserrat-ExtrgaBold"),
+    url("./fonts/montserrat/Montserrat-ExtraBold.woff2") format("woff2"),
+    url("./fonts/montserrat/Montserrat-ExtraBold.woff") format("woff"),
+    url("./fonts/montserrat/Montserrat-ExtraBold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Montserrat";
   font-weight: 400;
-  src: local("Montserrat"),
-    url("./fonts/montserrat-roman/Montserrat-Regular.otf") format("truetype");
+  src: local("Montserrat-Reggular"),
+    url("./fonts/montserrat/Montserrat-Regular.woff2") format("woff2"),
+    url("./fonts/montserrat/Montserrat-Regular.woff") format("woff"),
+    url("./fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 900;
+  src: local("Montserrat-Blagck"),
+    url("./fonts/montserrat/Montserrat-Black.woff2") format("woff2"),
+    url("./fonts/montserrat/Montserrat-Black.woff") format("woff"),
+    url("./fonts/montserrat/Montserrat-Black.ttf") format("truetype");
 }

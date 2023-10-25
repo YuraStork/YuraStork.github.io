@@ -1,6 +1,7 @@
 (function main() {
   new Swiper(".swiper", {
     grabCursor: true,
+    loop: true,
     slideToClickedSlide: true,
     
     keyboard: {
