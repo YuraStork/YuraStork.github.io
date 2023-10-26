@@ -1,7 +1,6 @@
 (function main() {
   new Swiper(".swiper", {
     grabCursor: true,
-    loop: true,
     slideToClickedSlide: true,
     
     keyboard: {
@@ -17,27 +16,36 @@
       320: {
         centeredSlides: true,
         initialSlide: 1,
-        slidesPerView: 1,
-        spaceBetween: 20,
+        slidesPerView: 1.3,
+        spaceBetween: 10,
       },
+
+      500: {
+        centeredSlides: true,
+        initialSlide: 1,
+        slidesPerView: 1.5,
+        spaceBetween: 10,
+      },
+
       600: {
         centeredSlides: true,
         initialSlide: 2,
-        slidesPerView: 1.5,
+        slidesPerView: 1.7,
         spaceBetween: 30,
       },
+
       800: {
         centeredSlides: true,
         initialSlide: 2,
-        slidesPerView: 2,
-        spaceBetween: 50,
+        slidesPerView: 2.5,
+        spaceBetween: 40,
       },
 
       1000: {
         centeredSlides: true,
         initialSlide: 2,
         slidesPerView: 2.5,
-        spaceBetween: 50,
+        spaceBetween: 40,
       },
 
       1300: {
@@ -48,7 +56,7 @@
       },
 
       1700: {
-        initialSlide: 2,
+        initialSlide: 1,
         slidesPerView: 4,
         spaceBetween: 50,
         centeredSlides: true,
