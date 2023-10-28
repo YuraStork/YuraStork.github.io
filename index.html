@@ -68,14 +68,14 @@
           <div class="header-description-wrapper">
             <img class="header-logo" src="images/logo.svg" alt="мар'ян логотип" width="312" height="225" />
             <b class="header-sub-logo">Житомир</b>
-            <p class="header-mark-description pre-variant">
-              З дня заснування у 2001 році <br> ТМ «Мар’ян» набула бездоганної <br> репутації у сфері виробництва
+            <p class="header-mark-description">
+              З дня заснування у 2001 році <br> ТМ «Мар’ян» набула бездоганної репутації у сфері виробництва
               м’ясних виробів.
-
+              <br><br>
               Головним нашим пріоритетом <br> є турбота про споживача, що проявляється у використанні лише
-              свіжої та виключно якісної сировини <br> для виробництва м’ясних виробів <br> ТМ «Мар’ян».
-
-              У складі нашої продукції тільки <br> м'ясо, сіль та спеції. Якість наших <br> виробів здатна задовільнити
+              свіжої та виключно якісної сировини для виробництва м’ясних виробів ТМ «Мар’ян».
+              <br><br>
+              У складі нашої продукції тільки <br> м'ясо, сіль та спеції. Якість наших виробів здатна задовільнити
               найвибагливішого споживача.
             </p>
             <!-- <b class="certificate-label dark">EST 2001</b> -->
@@ -136,7 +136,6 @@
 
   </section>
 
-  <!-- products -->
   <section class="products-section">
     <div class="products-wrapper container">
       <div class="product-item">
@@ -144,15 +143,23 @@
           Ковбаси <br />
           варені
         </h3>
-        <img src="./images/products/milk-sausages.png" width="436" height="550" alt="Молочні ковбаси"
-          class="product-picture first" />
+        <picture>
+          <source srcset="./images/products/milk-sausages.webp" type="image/webp">
+          <img src="./images/products/milk-sausages.png" width="436" height="550" alt="Молочні ковбаси"
+            class="product-picture first" />
+        </picture>
+
       </div>
       <div class="product-item">
         <h3 class="product-title">
           Сосиски та <br />
           сардельки
         </h3>
-        <img src="./images/products/two-sausages.png" alt="" class="product-picture" />
+        <picture>
+          <source srcset="./images/products/two-sausages.webp" type="image/webp">
+          <img src="./images/products/two-sausages.png" width="531" height="412" alt="Ковбаси"
+            class="product-picture" />
+        </picture>
       </div>
       <div class="product-item">
         <h3 class="product-title">
@@ -160,14 +167,20 @@
           напівкопчені <br />
           та сирокопчені
         </h3>
-        <img src="./images/products/frankfurter.png" alt="" class="product-picture" />
+        <picture>
+          <source srcset="./images/products/frankfurter.webp" type="image/webp">
+          <img src="./images/products/frankfurter.png" width="434" height="376" alt="Сосиски" class="product-picture" />
+        </picture>
       </div>
       <div class="product-item">
         <h3 class="product-title">
           Вироби із м'яса <br />
           копчено-запечені
         </h3>
-        <img src="./images/products/meat.png" alt="" class="product-picture" />
+        <picture>
+          <source srcset="./images/products/meat.webp" type="image/webp">
+          <img src="./images/products/meat.png" width="476" height="347" alt="М'ясо" class="product-picture" />
+        </picture>
       </div>
     </div>
   </section>
@@ -175,6 +188,7 @@
   <!-- gallery -->
   <section class="gallery-section">
     <div class="gallery-wrapper">
+
       <div class="swiper gallery-swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
@@ -183,8 +197,6 @@
               <source srcset="./images/gallery/img-1.webp" type="image/webp">
               <img src="./images/gallery/img-1.jpg" width="450" height="350" alt="Фото магазину">
             </picture>
-
-            <strong class="gallery-footer-title">пров. Телефонний, 3 <br>(р-н Польова, біля ЦНАПу)</strong>
           </div>
 
           <div class="swiper-slide gallery-slide">
@@ -192,8 +204,6 @@
               <source srcset="./images/gallery/img-2.webp" type="image/webp">
               <img src="./images/gallery/img-2.jpg" width="450" height="350" alt="Фото магазину">
             </picture>
-
-            <strong class="gallery-footer-title">вул. Велика Бердичівська, 69/2 <br>(ринок «Райдуга»)</strong>
           </div>
 
           <div class="swiper-slide gallery-slide">
@@ -201,8 +211,6 @@
               <source srcset="./images/gallery/img-3.webp" type="image/webp">
               <img src="./images/gallery/img-3.jpg" width="450" height="350" alt="Фото магазину">
             </picture>
-
-            <strong class="gallery-footer-title">вул. Князів Острозьких, 79 <br><br></strong>
           </div>
 
           <div class="swiper-slide gallery-slide">
@@ -210,8 +218,6 @@
               <source srcset="./images/gallery/img-4.webp" type="image/webp">
               <img src="./images/gallery/img-4.jpg" width="450" height="350" alt="Фото магазину">
             </picture>
-
-            <strong class="gallery-footer-title">вул. Євгена Рихліка, 11 <br>(ЖК «Домашній»)</strong>
           </div>
         </div>
 
@@ -232,11 +238,34 @@
         </div>
       </div>
 
-      <div class="gallery-footer">
-        <div class="gallery-footer-container container">
-          <strong class="gallery-footer-title"></strong>
+      <div class="swiper-gallery-footer">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="gallery-footer-slide container">
+              <strong class="gallery-footer-title">пров. Телефонний, 3 <br>(р-н Польова, біля ЦНАПу)</strong>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="gallery-footer-slide container">
+              <strong class="gallery-footer-title">вул. Велика Бердичівська, 69/2 <br>(ринок «Райдуга»)</strong>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="gallery-footer-slide container">
+              <strong class="gallery-footer-title">вул. Князів Острозьких, 79 </strong>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="gallery-footer-slide container">
+              <strong class="gallery-footer-title">вул. Євгена Рихліка, 11 <br>(ЖК «Домашній»)</strong>
+            </div>
+          </div>
         </div>
       </div>
+
     </div>
   </section>
 

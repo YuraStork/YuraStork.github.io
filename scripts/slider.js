@@ -1,8 +1,31 @@
 (function main() {
+  const swipperGalleryFooter = new Swiper(".swiper-gallery-footer", {
+    initialSlide: 4,
+    slidesPerView: 1,
+
+    allowTouchMove: false,
+    
+    320: {
+      initialSlide: 1,
+      slidesPerView: 1,
+    },
+
+    600: {  
+      initialSlide: 2,
+      slidesPerView: 1,
+    },
+
+    1700: {
+      initialSlide: 1,
+      slidesPerView: 1,
+    },
+  });
+
   new Swiper(".swiper", {
     grabCursor: true,
     slideToClickedSlide: true,
-    
+    initialSlide: 2,
+
     keyboard: {
       enabled: true,
     },
@@ -10,6 +33,10 @@
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    },
+
+    thumbs: {
+      swiper: swipperGalleryFooter,
     },
 
     breakpoints: {
@@ -37,7 +64,7 @@
       800: {
         centeredSlides: true,
         initialSlide: 2,
-        slidesPerView: 2.5,
+        slidesPerView: 2,
         spaceBetween: 40,
       },
 
@@ -70,7 +97,7 @@
 
   burgerIcon.addEventListener("click", () => {
     mobileMenu.classList.toggle("visible");
-    burgerIcon.classList.toggle('close');
+    burgerIcon.classList.toggle("close");
     body.classList.toggle("freezed");
   });
 })();

@@ -1,6 +1,6 @@
 .header {
-  position: relative;
   padding-bottom: 50px;
+  position: relative;
   overflow: hidden;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .header-sub-logo {
-  font-family: "Montserrat";
+  font-family: "NAMU";
   text-transform: uppercase;
   color: var(--primary);
   letter-spacing: 10px;
@@ -136,7 +136,7 @@
 
 .header-description-wrapper {
   justify-content: center;
-  flex-basis: 454px;
+  flex-basis: 434px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,7 +149,8 @@
   font-family: NAMU;
   line-height: 120%;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 22px;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 1600px) {

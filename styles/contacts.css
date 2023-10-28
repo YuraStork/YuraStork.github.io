@@ -1,5 +1,5 @@
 .contacts-section {
-  padding: 200px 0;
+  padding: 100px 0 150px 0;
 }
 
 .contacts-wrapper {
@@ -19,7 +19,7 @@
   white-space: nowrap;
   max-width: 680px;
   font-weight: 900;
-  font-size: 50px;
+  font-size: 45px;
   display: block;
   width: 100%;
 }
@@ -28,7 +28,7 @@
   font-family: "Montserrat";
   font-weight: 400;
   padding-top: 10px;
-  font-size: 50px;
+  font-size: 45px;
   max-width: 680px;
   width: 100%;
 }
@@ -60,7 +60,7 @@
   }
 
   .contacts-section {
-    padding: 130px 0px;
+    padding: 80px 0 130px 0;
   }
 
   .contact-title.small {
@@ -76,7 +76,7 @@
   }
 
   .contacts-section {
-    padding: 110px 0px;
+    padding: 60px 0 120px 0;
   }
 
   .contact-title.small {
@@ -92,7 +92,7 @@
   }
 
   .contacts-section {
-    padding: 80px 0px;
+    padding: 40px 0 90px 0;
   }
 
   .contact-title.small {
@@ -122,7 +122,7 @@
   }
 
   .contacts-section {
-    padding: 50px 0px;
+    padding: 0px 0 50px 0;
   }
 }
 

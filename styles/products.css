@@ -11,7 +11,7 @@
 }
 
 .product-item {
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-basis: 600px;
   flex-wrap: wrap;
@@ -25,6 +25,10 @@
   font-family: Arsenal;
   font-weight: 700;
   font-size: 32px;
+}
+
+.product-picture{
+  transform: scale(80%);
 }
 
 .product-picture.first {
