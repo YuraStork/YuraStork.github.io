@@ -150,7 +150,7 @@
 
   .feature-description {
     font-size: 16px;
-    line-height: 175%;
+    line-height: 150%;
     text-align: center;
   }
 
@@ -170,3 +170,8 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .features-wrapper {
+    grid-template-columns: minmax(250px, 400px);
+  }
+}

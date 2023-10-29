@@ -38,6 +38,7 @@
 
 @media screen and (max-width: 1600px) {
   .product-item {
+    justify-content: flex-start;
     flex-direction: column;
     text-align: center;
     flex-basis: auto;
@@ -49,7 +50,7 @@
   }
 
   .product-picture {
-    width: 320px;
+    width: 420px;
     height: auto;
   }
 
