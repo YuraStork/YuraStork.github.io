@@ -50,8 +50,8 @@
   }
 
   .product-picture {
-    width: 420px;
-    height: auto;
+    width: auto;
+    height: 250px;
   }
 
   .product-title {
@@ -73,10 +73,22 @@
   .product-title {
     font-size: 22px;
   }
+
+  .product-picture.first {
+    width: auto;
+    height: 200px;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  .product-picture.first{
+    transform: translateX(-20px);
+  }
+
   .product-item{
+    width: 250px;
+    align-items: center;
+    text-align: center;
     padding: 10px 15px 30px 15px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 10px;
