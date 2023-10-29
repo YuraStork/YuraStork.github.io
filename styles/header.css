@@ -49,7 +49,7 @@
   bottom: 0;
 }
 
-.header-pictures-wrapper > img {
+.header-pictures-wrapper > picture > img {
   width: 100%;
   height: 100%;
 }
