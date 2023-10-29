@@ -4,13 +4,13 @@
     slidesPerView: 1,
 
     allowTouchMove: false,
-    
+
     320: {
       initialSlide: 1,
       slidesPerView: 1,
     },
 
-    600: {  
+    600: {
       initialSlide: 2,
       slidesPerView: 1,
     },
@@ -96,8 +96,22 @@
   const body = document.querySelector("body");
 
   burgerIcon.addEventListener("click", () => {
+    if(window.scrollY > 0){
+      burgerWrapper.classList.toggle("shadow");
+    }
+
     mobileMenu.classList.toggle("visible");
     burgerIcon.classList.toggle("close");
     body.classList.toggle("freezed");
+  });
+
+  const burgerWrapper = document.querySelector(".burger-wrapper");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 0) {
+      burgerWrapper.classList.add("shadow");
+    } else {
+      burgerWrapper.classList.remove("shadow");
+    }
   });
 })();

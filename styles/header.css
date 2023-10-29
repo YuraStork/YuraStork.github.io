@@ -60,7 +60,8 @@
   justify-content: center;
   position: absolute;
   background-color: var(--white);
-  top: -100vh;
+  visibility: hidden;
+  top: -100dvh;
   right: 0;
   left: 0;
   z-index: 10;
@@ -70,21 +71,36 @@
 }
 
 .mobile-menu.visible {
+  visibility: visible;
+  position: fixed;
   opacity: 1;
   bottom: 0;
   top: 0;
 }
 
-.burger-menu {
+.burger-wrapper {
+  background-color: var(--white);
+  justify-content: flex-end;
+  transition: all .3s;
+  position: fixed;
   display: none;
+  padding: 25px;
+  z-index: 12;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.burger-wrapper.shadow{
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 5px 3px;
+}
+
+.burger-menu {
   flex-direction: column;
   transition: all 0.2s;
-  gap: 6px;
+  display: flex;
   width: 40px;
-  position: absolute;
-  top: 50px;
-  right: 50px;
-  z-index: 11;
+  gap: 6px;
 }
 
 .burger-menu:active {
@@ -188,41 +204,41 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .header{
+  .header {
     align-items: center;
     min-height: 100dvh;
     padding: 50px 0;
     display: flex;
   }
 
-  .header-navigation.mobile{
+  .header-navigation.mobile {
     align-self: center;
   }
-  
+
   .header-pictures-wrapper {
     display: none;
   }
 
-  .header-description-wrapper{
+  .header-description-wrapper {
     align-items: flex-start;
     flex-basis: 700px;
   }
 
-  .header-mark-description br:not(.visible){
+  .header-mark-description br:not(.visible) {
     display: none;
   }
 
   .header-content-wrapper {
     justify-content: center;
     margin-top: 60px;
-  }  
+  }
 
   .header-logo {
     width: 220px;
     height: auto;
-  }  
-  
-  .header-mark-description{
+  }
+
+  .header-mark-description {
     font-size: 20px;
   }
 
@@ -233,7 +249,7 @@
     order: 3;
   }
 
-  .burger-menu {
+  .burger-wrapper {
     display: flex;
   }
 
@@ -250,8 +266,8 @@
     margin-top: 0px;
     order: inherit;
   }
-  
-  .header-mark-description br:not(.visible){
+
+  .header-mark-description br:not(.visible) {
     display: block;
   }
 
@@ -259,7 +275,7 @@
     margin-left: 10px;
   }
 
-  .header-description-wrapper{
+  .header-description-wrapper {
     align-items: center;
     flex-basis: 380px;
   }
@@ -267,13 +283,13 @@
   .header-content-wrapper {
     justify-content: center;
     margin-top: 60px;
-  }  
+  }
 
   .header-logo {
     width: 220px;
     height: auto;
-  }  
-  
+  }
+
   .header-sub-logo {
     display: block;
   }
@@ -284,7 +300,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .header-mark-description br:not(.visible){
+  .header-mark-description br:not(.visible) {
     display: none;
   }
-  }
+}
