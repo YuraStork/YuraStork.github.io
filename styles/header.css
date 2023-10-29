@@ -1,6 +1,7 @@
 .header {
   padding-bottom: 50px;
   position: relative;
+  min-height: 100vh;
   overflow: hidden;
 }
 
@@ -43,7 +44,9 @@
   width: 1210px;
   height: 1201px;
   position: absolute;
+  transform: translateY(30%);
   right: 0;
+  bottom: 0;
 }
 
 .header-pictures-wrapper > img {
