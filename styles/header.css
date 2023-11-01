@@ -1,7 +1,7 @@
 .header {
   padding-bottom: 50px;
   position: relative;
-  min-height: 100vh;
+  min-height: 100dvh;
   overflow: hidden;
 }
 
@@ -135,9 +135,11 @@
 .header-navigation-list-item > a {
   color: var(--primary);
   transition: all 0.1s;
+  position: relative;
   white-space: nowrap;
   padding: 55px 10px;
-  font-family: NAMU;
+  font-family: 'NAMU';
+  z-index: 2;
   font-weight: 400;
   font-size: 18px;
   display: block;
@@ -248,6 +250,7 @@
   .header-sub-logo {
     align-self: flex-end;
     margin-top: 20px;
+    font-family: NAMU;
     font-size: 18px;
     order: 3;
   }

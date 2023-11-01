@@ -5,91 +5,97 @@
 
 .products-wrapper {
   justify-content: space-between;
-  flex-wrap: wrap;
-  display: flex;
+  grid-template: 400px 400px / 1fr 1fr;
+  display: grid;
   gap: 70px;
 }
 
 .product-item {
   justify-content: space-between;
   align-items: center;
-  flex-basis: 600px;
-  flex-wrap: wrap;
-  display: flex;
-  flex-grow: 1;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
   gap: 20px;
 }
 
 .product-title {
   text-transform: uppercase;
   font-family: Arsenal;
+  white-space: nowrap;
   font-weight: 700;
   font-size: 32px;
 }
 
-.product-picture{
-  transform: scale(80%);
+.product-picture {
+  width: 100%;
+  height: auto;
 }
 
 .product-picture.first {
+  max-height: 400px;
   transform: translateX(-30px);
 }
 
-
 @media screen and (max-width: 1600px) {
-  .product-item {
-    justify-content: flex-start;
-    flex-direction: column;
-    text-align: center;
-    flex-basis: auto;
-    flex-grow: 0;
-  }
 
-  .products-wrapper {
-    justify-content: center;
-  }
-
-  .product-picture {
-    width: auto;
-    height: 250px;
-  }
 
   .product-title {
     font-size: 26px;
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .products-section {
     padding-top: 30px;
     padding-bottom: 60px;
   }
 
-  .product-picture {
-    width: 220px;
-    height: auto;
+  .product-item {
+    grid-template-columns: 0.5fr 1fr;
+    justify-content: center;
   }
 
   .product-title {
-    font-size: 22px;
+    font-size: 18px;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  .product-item {
+    grid-template: auto minmax(150px, 220px) / minmax(200px, 250px);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-title {
+    font-size: 18px;
+  }
+
+}
+
+
+@media screen and (max-width: 600px) {
+  .products-wrapper {
+    justify-content: center;
+    grid-template-columns: minmax(auto, 275px);
+    grid-auto-rows: auto;
+  
   }
 
   .product-picture.first {
-    width: auto;
-    height: 200px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .product-picture.first{
     transform: translateX(-20px);
+    max-height: 230px;
+    width: auto;
   }
 
-  .product-item{
-    width: 250px;
+  .product-item {
+    grid-template: auto 1fr / 1fr;
     align-items: center;
     text-align: center;
-    padding: 10px 15px 30px 15px;
+    gap: 10px;
+    padding: 10px 30px 30px 30px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 10px;
   }
