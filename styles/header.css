@@ -143,6 +143,7 @@
   font-weight: 400;
   font-size: 18px;
   display: block;
+  text-transform: uppercase;
 }
 
 .header-navigation-list-item.mobile > a {
