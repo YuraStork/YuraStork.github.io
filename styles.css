@@ -1,5 +1,6 @@
 @import "./normalize.css";
 @import "./fonts.css";
+@import "./typography.css";
 
 * {
   box-sizing: border-box;
@@ -28,7 +29,8 @@ ol {
 }
 
 .container {
-  max-width: 1700px;
+  max-width: 1710px;
+  padding: 0px 10px;
   margin: 0 auto;
 }
 
@@ -38,20 +40,43 @@ ol {
 
 body {
   font-family: "Montserrat";
+  overflow-x: hidden;
 }
 
-/* typography */
-
-.text-xs {
-  font-size: 24px;
+@media screen and (max-width: 1820px) {
+  .container {
+    max-width: 1320px;
+  }
 }
 
-.text-sm {
-  font-size: 30px;
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
 }
 
-.text-base {
-  font-size: 40px;
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
 }
 
 /* header */
@@ -74,21 +99,14 @@ header {
 }
 
 .header-navigation-wrapper h1 {
-  font-size: 24px;
-  font-weight: 900;
-  text-align: center;
   text-transform: uppercase;
-}
-
-.header-navigation-wrapper h1 b {
-  font-size: 64px;
+  text-align: center;
   font-weight: 900;
 }
 
 .header-navigation-wrapper a {
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 32px;
   color: white;
 }
 
@@ -105,7 +123,6 @@ header {
 }
 
 .header-content-wrapper h2 {
-  font-size: 96px;
   color: var(--primary);
   line-height: 125%;
   font-weight: 900;
@@ -141,7 +158,6 @@ header {
 }
 
 .about-us-title {
-  font-size: 96px;
   font-weight: 900;
   color: var(--primary);
   text-align: right;
@@ -172,8 +188,6 @@ header {
 .about-us-card span {
   position: absolute;
   line-height: 124%;
-  font-weight: 900;
-  font-size: 70px;
   right: 37px;
   top: 17px;
 }
@@ -231,6 +245,55 @@ header {
   right: 0;
   left: 10%;
 }
+
+@media screen and (max-width: 576px) {
+  .about-us-section {
+    padding-bottom: 35px;
+    padding-top: 45px;
+  }
+
+  .about-us-left-label {
+    padding: 2px;
+    right: 67%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .about-us-left-label > img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .about-us-title {
+    font-size: 27px;
+  }
+
+  .about-us-cards-wrapper {
+    padding-top: 26px;
+    row-gap: 15px;
+  }
+
+  .about-us-card {
+    grid-template-rows: auto 1fr;
+    border-radius: 25px;
+    padding: 24px 15px;
+  }
+
+  .about-us-subtitle {
+    margin-top: 26px;
+    padding-left: 65px;
+  }
+
+  .about-us-subtitle h4 {
+    font-size: 18px;
+    padding-top: 13px;
+  }
+
+  .about-us-subtitle::before {
+    height: 65px;
+  }
+}
 /* gallery */
 
 .gallery-images-wrapper {
@@ -243,6 +306,24 @@ header {
 .gallery-image-wrapper img {
   height: 100%;
   width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .gallery-images-wrapper {
+    grid-template: 150px 150px / 1fr 1fr 1fr;
+    padding: 0px 10px;
+    display: grid;
+    gap: 10px;
+  }
+
+  .gallery-images-wrapper > .gallery-image-wrapper:nth-of-type(1),
+  .gallery-images-wrapper > .gallery-image-wrapper:nth-of-type(6) {
+    display: none;
+  }
+
+  .gallery-image-wrapper img {
+    border-radius: 25px;
+  }
 }
 
 /* benefits */
@@ -263,7 +344,6 @@ header {
 
 .benefits-title-wrapper h4 {
   text-transform: uppercase;
-  font-size: 96px;
   font-weight: 800;
   color: white;
   letter-spacing: 10px;
@@ -296,6 +376,47 @@ header {
   grid-column: span 2;
 }
 
+@media screen and (max-width: 576px) {
+  .benefits-section {
+    padding-top: 27px;
+  }
+
+  .benefits-title-wrapper {
+    padding-left: 0px;
+    padding-bottom: 27px;
+    gap: 25px;
+  }
+
+  .benefits-title-wrapper img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .benefits-title-wrapper h4 {
+    color: black;
+    font-size: 25px;
+    letter-spacing: 3px;
+    text-align: right;
+    text-shadow: none;
+  }
+
+  .benefits-cards-wrapper {
+    gap: 15px;
+  }
+
+  .benefit-card {
+    padding: 24px 15px;
+    border-radius: 35px;
+    grid-template: auto 1fr / auto 1fr;
+    gap: 20px;
+  }
+
+  .benefit-card img {
+    width: 65px;
+    height: 65px;
+  }
+}
+
 /* price */
 
 .price-section-header {
@@ -311,13 +432,12 @@ header {
 }
 
 .price-section-header h4 {
-  font-size: 96px;
   color: #076fd9;
   text-transform: uppercase;
+  letter-spacing: 7px;
 }
 
 .price-section-header p {
-  font-size: 32px;
   line-height: 113%;
   font-weight: 800;
 }
@@ -341,7 +461,6 @@ header {
 .franchise > div:last-of-type {
   background-color: #066fd9;
   color: #fff;
-  font-size: 88px;
   padding-top: 17px;
   padding-bottom: 17px;
   border-radius: 62px;
@@ -380,7 +499,6 @@ header {
   justify-content: space-between;
   padding: 15px 21px;
   text-transform: uppercase;
-  font-size: 30px;
   font-weight: 900;
   color: #2b4f71;
   align-items: center;
@@ -390,6 +508,63 @@ header {
   text-align: center;
   text-wrap: nowrap;
   min-width: 30%;
+}
+
+@media screen and (max-width: 576px) {
+  .price-section-header {
+    grid-template: auto auto / auto 1fr;
+    margin-bottom: 30px;
+    column-gap: 5px;
+    row-gap: 10px;
+  }
+
+  .price-section-header img {
+    grid-row: span 1;
+    width: 100px;
+  }
+
+  .price-section-header h4 {
+    font-weight: 900;
+  }
+
+  .price-section-header p {
+    font-size: 12px;
+    grid-column: span 2;
+    padding-left: 15px;
+  }
+
+  .franchises-wrapper {
+    gap: 34px;
+  }
+
+  .franchise {
+    gap: 4px;
+  }
+
+  .franchise > div:first-of-type,
+  .franchise > div:last-of-type {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-radius: 25px;
+  }
+
+  .franchise > div {
+    border-radius: 20px;
+    background-color: #d4e1ef;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 21px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #2b4f71;
+    align-items: center;
+  }
+
+  .franchise > div > b:nth-of-type(2) {
+    text-align: center;
+    text-wrap: nowrap;
+    min-width: 30%;
+  }
 }
 
 /* quick start */
@@ -422,11 +597,8 @@ header {
 }
 
 .quick-start-section-title > h4 {
-  font-size: 90px;
-  font-weight: 800;
-  line-height: 124%;
-  color: #fff;
   text-transform: uppercase;
+  color: #fff;
 }
 
 .quick-start-steps-wrapper {
@@ -482,9 +654,6 @@ header {
 .quick-start-step-number {
   position: relative;
   color: #23476b;
-  line-height: 124%;
-  font-weight: 800;
-  font-size: 74px;
   top: -12px;
 }
 
@@ -495,7 +664,6 @@ header {
 
 .quick-start-step-title {
   color: #23476b;
-  font-size: 32px;
   font-weight: 900;
   line-height: 127%;
   text-transform: uppercase;
@@ -503,7 +671,6 @@ header {
 
 .quick-start-step-description {
   color: #23476b;
-  font-size: 30px;
   font-weight: 700;
   line-height: 120%;
   position: relative;
@@ -559,7 +726,6 @@ footer {
 .leave-application-link {
   background-color: white;
   text-transform: uppercase;
-  font-size: 74px;
   font-weight: 900;
   line-height: 120%;
   text-align: center;
@@ -571,9 +737,6 @@ footer {
 
 .contact-link {
   color: #076fd9;
-  font-size: 46px;
-  line-height: 120%;
-  font-weight: 900;
 }
 
 .footer-contacts-wrapper {
@@ -584,11 +747,10 @@ footer {
 }
 
 .footer-contacts-wrapper > h5 {
-  font-size: 90px;
-  line-height: 120%;
   font-weight: 900;
   color: #076fd9;
 }
+
 .social-links-wrapper {
   display: flex;
   gap: 10px;
