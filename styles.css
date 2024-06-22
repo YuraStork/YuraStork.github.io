@@ -631,7 +631,7 @@ header {
 
 .quick-start-section-title {
   justify-content: space-between;
-  background-color: #076fd9;
+  background-color: var(--primary);
   margin-bottom: 21px;
   max-width: 80%;
   display: flex;
@@ -647,10 +647,10 @@ header {
   content: "";
   position: absolute;
   height: 110px;
-  left: -100%;
+  left: -99vw;
   width: 100vw;
   z-index: -1;
-  background-color: #076fd9;
+  background-color: var(--primary);
 }
 
 .quick-start-section-title > h4 {
@@ -761,14 +761,127 @@ header {
 }
 
 @media screen and (max-width: 720px) {
+  .quick-start-section {
+    padding-top: 50px;
+  }
+
+  .quick-start-section-title {
+    background-color: var(--primary);
+    border-bottom-right-radius: 57px;
+    border-top-right-radius: 57px;
+    margin-bottom: 14px;
+    padding-right: 0px;
+    max-width: 100%;
+    height: 57px;
+  }
+
+  .quick-start-section-title::before {
+    background-color: var(--primary);
+    height: 57px;
+  }
+
+  .quick-start-section-title > h4 {
+    font-size: 46px;
+  }
+
+  .quick-start-section-title img {
+    position: relative;
+    height: 120px;
+    width: 108px;
+    right: -10px;
+    top: 20px;
+  }
+
   .quick-start-steps-wrapper {
     background-image: url("public/images/quick-start-steps-mobile-bg.png");
-    grid-template: auto auto / 1fr 1fr;
-    background-size: 90% auto cover;
-    background-repeat: no-repeat;
-    row-gap: 130px;
+    margin-top: 20px;
+    grid-template: repeat(4, auto) / 1fr;
+    min-height: 1400px;
+    gap: 0;
+  }
+
+  .quick-start-step-wrapper {
+    grid-template: auto auto / auto 1fr;
+    max-width: 400px;
+    justify-self: end;
+    position: relative;
+    column-gap: 10px;
     display: grid;
-    margin-top: 150px;
+    row-gap: 27px;
+    z-index: -1;
+  }
+
+  .quick-start-step-wrapper.reverse {
+    justify-self: start;
+  }
+
+  .quick-start-steps-wrapper > .quick-start-step-wrapper:nth-of-type(1) {
+    position: static;
+    justify-self: end;
+    padding-top: 60px;
+    order: 1;
+  }
+
+  .quick-start-steps-wrapper > .quick-start-step-wrapper:nth-of-type(2) {
+    position: relative;
+    left: 20px;
+    padding-top: 100px;
+    max-width: 390px;
+    order: 3;
+  }
+
+  .quick-start-steps-wrapper > .quick-start-step-wrapper:nth-of-type(3) {
+    position: relative;
+    padding-top: 50px;
+    left: unset;
+    top: unset;
+    z-index: 1;
+    order: 2;
+  }
+
+  .quick-start-steps-wrapper > .quick-start-step-wrapper:nth-of-type(4) {
+    position: relative;
+    left: unset;
+    top: unset;
+    z-index: 1;
+    order: 4;
+  }
+
+  .quick-start-step-number {
+    position: relative;
+    color: #23476b;
+    top: -12px;
+    font-size: 58px;
+  }
+
+  .quick-start-step-number.reverse {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .quick-start-step-title {
+    font-size: 24px;
+  }
+
+  .quick-start-step-description {
+    line-height: 124%;
+    font-size: 20px;
+    white-space: normal;
+    max-width: 270px;
+  }
+
+  .quick-start-step-description br {
+    display: none;
+  }
+
+  .quick-start-step-description::before {
+    background-color: #03c6ff;
+    position: absolute;
+    width: 172px;
+    content: "";
+    height: 9px;
+    top: -21px;
+    left: 0px;
   }
 }
 /* footer */
