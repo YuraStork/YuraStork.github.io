@@ -1,91 +1,14 @@
 @import "./normalize.css";
 @import "./fonts.css";
+@import "./common.css";
 @import "./typography.css";
-
-* {
-  box-sizing: border-box;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: #076fd9;
-}
-
-ul,
-ol {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.container {
-  max-width: 1710px;
-  padding: 0px 10px;
-  margin: 0 auto;
-}
-
-:root {
-  --primary: #076fd9;
-}
-
-body {
-  font-family: "Montserrat";
-  overflow-x: hidden;
-}
-
-@media screen and (max-width: 1820px) {
-  .container {
-    max-width: 1320px;
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .container {
-    max-width: 100%;
-  }
-}
+@import "./modal.css";
 
 /* header */
 header {
-  background-image: url("public/images/header-bg.png");
-  background-repeat: no-repeat;
+  background: url("public/images/header-bg.png") no-repeat;
   background-size: 100% 100% cover;
-  padding-bottom: 122px;
-  padding-top: 53px;
+  padding: 53px 0 122px 0;
 }
 
 .header-navigation-wrapper {
@@ -93,9 +16,9 @@ header {
   justify-content: space-between;
   border-radius: 73px;
   align-items: center;
+  color: var(--white);
   padding: 21px 63px;
   display: flex;
-  color: white;
 }
 
 .header-navigation-wrapper h1 {
@@ -106,8 +29,8 @@ header {
 
 .header-navigation-wrapper a {
   text-transform: uppercase;
+  color: var(--white);
   font-weight: 900;
-  color: white;
 }
 
 .header-navigation-wrapper ul {
@@ -123,6 +46,7 @@ header {
 }
 
 .header-content-wrapper h2 {
+  text-transform: uppercase;
   color: var(--primary);
   line-height: 125%;
   font-weight: 900;
@@ -137,10 +61,98 @@ header {
   max-width: 760px;
   padding-top: 60px;
 }
+
+.header-navigation.mobile {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 80dvw;
+  overflow: hidden;
+  background-color: rgba(29, 124, 217, 0.95);
+  padding: 70px 20px;
+  border-top-right-radius: 55px;
+  z-index: 100;
+  transition: all 0.3s;
+  border-bottom-right-radius: 55px;
+}
+
+.header-navigation.mobile ul {
+  flex-direction: column;
+}
+
+.mobile-menu-burger {
+  flex-direction: column;
+  display: flex;
+  width: 74px;
+  gap: 13px;
+  margin-top: 25px;
+}
+
+.mobile-menu-burger > div {
+  background-color: var(--primary);
+  border-radius: 10px;
+  height: 9px;
+}
+
+@media screen and (max-width: 720px) {
+  .header-navigation {
+    display: none;
+  }
+
+  header {
+    background-image: url("public/images/header-mobile-bg.png");
+    padding: 10px 0 32px 0;
+    min-height: 1281px;
+  }
+
+  .header-navigation-wrapper {
+    justify-content: space-between;
+    background-color: transparent;
+    border-radius: 0;
+    align-items: flex-start;
+    padding: 0px 0px;
+    display: flex;
+    color: var(--primary);
+  }
+
+  .header-navigation-wrapper h1 {
+    text-align: left;
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  .header-navigation-wrapper b {
+    font-size: 96px;
+  }
+
+  .header-content-wrapper {
+    justify-content: flex-start;
+    padding-top: 100px;
+  }
+
+  .header-content-wrapper > div {
+    flex-basis: 60%;
+  }
+
+  .header-content-wrapper h2 {
+    color: var(--primary);
+    line-height: 125%;
+    font-weight: 900;
+    max-width: 760px;
+    font-size: 64px;
+  }
+
+  .header-content-wrapper p {
+    font-size: 32px;
+    max-width: 257px;
+    padding-top: 13px;
+  }
+}
+
 /* about us */
 .about-us-section {
-  background-image: url("public/images/about-us-bg.png");
-  background-repeat: no-repeat;
+  background-image: url("public/images/about-us-bg.png") no-repeat;
   background-size: 100% 100%;
   padding-bottom: 95px;
   padding-top: 91px;
@@ -246,18 +258,20 @@ header {
   left: 10%;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 720px) {
   .about-us-section {
+    background-image: url("public/images/about-us-mobile-bg.png");
+    background-size: 100% 100%;
     padding-bottom: 35px;
-    padding-top: 45px;
+    padding-top: 141px;
   }
 
   .about-us-left-label {
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
     padding: 2px;
     right: 67%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
   }
 
   .about-us-left-label > img {
@@ -266,18 +280,35 @@ header {
   }
 
   .about-us-title {
-    font-size: 27px;
+    font-size: 40px;
+    letter-spacing: 14px;
   }
 
   .about-us-cards-wrapper {
-    padding-top: 26px;
-    row-gap: 15px;
+    padding-top: 42px;
+    row-gap: 21px;
   }
 
   .about-us-card {
     grid-template-rows: auto 1fr;
-    border-radius: 25px;
-    padding: 24px 15px;
+    padding: 53px 33px 48px 33px;
+    border-radius: 45px;
+    max-width: 640px;
+  }
+
+  .about-us-card b {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    line-height: 120%;
+  }
+
+  .about-us-card p {
+    font-weight: 600;
+    line-height: 115%;
+    color: #293746;
+    margin-top: 10px;
+    letter-spacing: -2%;
   }
 
   .about-us-subtitle {
@@ -286,8 +317,9 @@ header {
   }
 
   .about-us-subtitle h4 {
-    font-size: 18px;
-    padding-top: 13px;
+    font-size: 28px;
+    letter-spacing: -2%;
+    line-height: 112%;
   }
 
   .about-us-subtitle::before {
@@ -297,10 +329,10 @@ header {
 /* gallery */
 
 .gallery-images-wrapper {
-  display: grid;
   grid-template: 350px 350px / 0.75fr 1fr 1fr 0.75fr;
-  row-gap: 32px;
   column-gap: 11px;
+  row-gap: 32px;
+  display: grid;
 }
 
 .gallery-image-wrapper img {
@@ -308,9 +340,9 @@ header {
   width: 100%;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 720px) {
   .gallery-images-wrapper {
-    grid-template: 150px 150px / 1fr 1fr 1fr;
+    grid-template: repeat(2, minmax(auto, 306px)) / 1fr 1fr 1fr;
     padding: 0px 10px;
     display: grid;
     gap: 10px;
@@ -376,7 +408,7 @@ header {
   grid-column: span 2;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 720px) {
   .benefits-section {
     padding-top: 27px;
   }
@@ -409,6 +441,7 @@ header {
     border-radius: 35px;
     grid-template: auto 1fr / auto 1fr;
     gap: 20px;
+    max-width: 678px;
   }
 
   .benefit-card img {
@@ -703,6 +736,17 @@ header {
   background-color: #ff43a4;
 }
 
+@media screen and (max-width: 720px) {
+  .quick-start-steps-wrapper {
+    background-image: url("public/images/quick-start-steps-mobile-bg.png");
+    grid-template: auto auto / 1fr 1fr;
+    background-size: 90% auto cover;
+    background-repeat: no-repeat;
+    row-gap: 130px;
+    display: grid;
+    margin-top: 150px;
+  }
+}
 /* footer */
 
 footer {

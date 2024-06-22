@@ -1,0 +1,49 @@
+.modal {
+  position: fixed;
+  height: 100dvh;
+  width: 100dvw;
+  overflow: hidden;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-wrapper {
+  width: 90vw;
+  max-height: 70dvh;
+  background-color: white;
+  overflow: auto;
+  border-radius: 65px;
+}
+
+.modal-content-header {
+  height: 140px;
+  font-size: 48px;
+  font-weight: 900;
+  color: white;
+  background-color: var(--primary);
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content-header img {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+@media screen and (max-width: 575px) {
+  .modal-content-header {
+    height: 100px;
+  }
+
+  .modal-content-header {
+    font-size: 28px;
+  }
+}

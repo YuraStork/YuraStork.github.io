@@ -16,15 +16,22 @@
                     <b class="text-2xl">Синергія </b><br>
                     дитячий садочок
                 </h1>
-                <nav>
+
+                <nav id="header-navigation" class="header-navigation">
                     <ul>
-                        <li><a href="#" class="text-m">Про нас</a> </li>
-                        <li><a href="#" class="text-m">Галерея</a></li>
-                        <li><a href="#" class="text-m">Переваги</a></li>
-                        <li><a href="#" class="text-m">Вартість</a></li>
-                        <li><a href="#" class="text-m">Контакти</a></li>
+                        <li><a href="#about-us" class="text-m">Про нас</a> </li>
+                        <li><a href="#gallery" class="text-m">Галерея</a></li>
+                        <li><a href="#benefits" class="text-m">Переваги</a></li>
+                        <li><a href="#price" class="text-m">Вартість</a></li>
+                        <li><a href="#contacts" class="text-m">Контакти</a></li>
                     </ul>
                 </nav>
+
+                <div id="mobile-menu-burger" class="mobile-menu-burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
 
             <div class="header-content-wrapper">
@@ -37,7 +44,7 @@
     </header>
 
     <main>
-        <section class="about-us-section">
+        <section id="about-us" class="about-us-section">
             <div class="about-us-left-label">
                 <img src="public/images/star.png" width="91px" height="92px" />
             </div>
@@ -174,7 +181,7 @@
                 <h4>ваш майбутній садочок - місце щасливих дітей</h4>
             </div>
         </section>
-        <section class="gallery-section">
+        <section id="gallery" class="gallery-section">
             <div class="gallery-images-wrapper">
                 <div class="gallery-image-wrapper">
                     <picture>
@@ -227,7 +234,7 @@
             </div>
         </section>
 
-        <section class="benefits-section">
+        <section id="benefits" class="benefits-section">
             <div class="container">
                 <div class="benefits-title-wrapper">
                     <img src="public/images/benefits-title-checkmark.png" width="256px" height="291px" alt="">
@@ -297,7 +304,7 @@
             </div>
         </section>
 
-        <section class="price-section">
+        <section id="price" class="price-section">
             <div class="container">
                 <div class="price-section-header">
                     <img src="public/images/calculator.png" alt="Калькулятор">
@@ -449,7 +456,7 @@
 
     </main>
 
-    <footer>
+    <footer id="contacts">
         <div class="leave-application-wrapper">
             <a href="" class="leave-application-link text-4xl">залишити заявку</a>
         </div>
@@ -520,6 +527,24 @@
 
         </div>
     </footer>
+
+    <!-- <div class="modal">
+        <div class="modal-content-wrapper">
+            <div class="modal-content-header">
+                <b>Заявка<br> на партнерство</b>
+                <img src="public/images/modal-close-icon.png" width="22px" height="22px" alt="">
+            </div>
+
+            <form>
+                <input name='' type="text">
+                <input name='' type="text">
+                <input name='' type="text">
+
+                <button type="submit">Відправити</button>
+            </form>
+        </div>
+    </div> -->
+    <script src="main.js"></script>
 </body>
 
 </html>
