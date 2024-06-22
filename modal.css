@@ -1,41 +1,112 @@
 .modal {
-  position: fixed;
-  height: 100dvh;
-  width: 100dvw;
+  transition: all 0.3s;
   overflow: hidden;
-  top: 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  display: none;
+  z-index: 1001;
+  inset: 0;
 }
 
-.modal-content-wrapper {
-  width: 90vw;
-  max-height: 70dvh;
-  background-color: white;
-  overflow: auto;
+.modal.show {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.modal-content-container {
+  background-color: var(--white);
   border-radius: 65px;
+  max-height: 718px;
+  max-width: 80vw;
+  overflow: auto;
 }
 
 .modal-content-header {
-  height: 140px;
-  font-size: 48px;
-  font-weight: 900;
-  color: white;
   background-color: var(--primary);
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
   position: relative;
   text-align: center;
+  font-weight: 900;
+  font-size: 48px;
+  height: 140px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+.modal-content-header br {
+  display: none;
 }
 
 .modal-content-header img {
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 40px;
+  top: 40px;
+}
+
+.modal-content-wrapper {
+  display: flex;
+  padding: 20px 70px 74px 61px;
+  gap: 78px;
+  align-items: center;
+}
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 1000;
+  display: none;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.backdrop.show {
+  display: block;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 745px;
+  flex: 1;
+}
+
+.text-field {
+  height: 104px;
+  border-radius: 45px;
+  padding-left: 65px;
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--primary);
+  transition: all 0.3s;
+  border: 6px solid var(--primary);
+}
+
+.text-field::placeholder {
+  color: #799bbd;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.text-field:valid {
+  background-color: rgba(5, 255, 5, 0.641);
+}
+
+.submit-button {
+  background-color: var(--primary);
+  padding: 24px 100px;
+  color: var(--white);
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  border-radius: 40px;
+  max-width: 482px;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 575px) {

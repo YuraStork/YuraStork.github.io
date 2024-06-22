@@ -45,8 +45,14 @@ body {
   font-family: "Montserrat";
 }
 
-body.freeze {
-  /* overflow: hidden; */
+body.disable {
+  overflow: hidden;
+}
+
+.icon-button {
+  background-color: transparent;
+  appearance: none;
+  border: none;
 }
 
 @media screen and (max-width: 1820px) {
