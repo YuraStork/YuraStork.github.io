@@ -26,12 +26,95 @@ ol {
 
 .container {
   max-width: 1710px;
-  padding: 0px 10px;
   margin: 0 auto;
 }
 
 html {
   scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+@media screen and (max-width: 1800px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  html {
+    font-size: 65%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  html {
+    font-size: 95%;
+  }
+}
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 65%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  html {
+    font-size: 50%;
+  }
 }
 
 :root {
@@ -55,27 +138,40 @@ body.disable {
   border: none;
 }
 
-@media screen and (max-width: 1820px) {
+@media screen and (min-width: 1920px) {
   .container {
-    max-width: 1320px;
+    max-width: 1800px;
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1920px) {
   .container {
-    max-width: 1140px;
+    max-width: 95%;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 720px) {
   .container {
-    max-width: 960px;
+    max-width: 100%;
+    padding: 0 37px;
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 620px) {
   .container {
-    max-width: 720px;
+    padding: 0 10px;
+  }
+}
+
+/* @media screen and (max-width: 1200px) {
+  .container {
+    max-width: 100%
+  }
+} */
+
+/* @media screen and (max-width: 992px) {
+  .container {
+    max-width: 962px;
   }
 }
 
@@ -90,4 +186,4 @@ body.disable {
   .container {
     max-width: 100%;
   }
-}
+} */

@@ -7,7 +7,7 @@
 /* header */
 header {
   background: url("public/images/header-bg.png") no-repeat;
-  background-size: 100% 100% cover;
+  background-size: 100% 100%;
   padding: 53px 0 122px 0;
 }
 
@@ -41,6 +41,7 @@ header {
 .header-content-wrapper {
   justify-content: flex-end;
   align-items: center;
+  padding-right: 37px;
   padding-top: 106px;
   display: flex;
 }
@@ -48,33 +49,32 @@ header {
 .header-content-wrapper h2 {
   text-transform: uppercase;
   color: var(--primary);
+  width: min-content;
   line-height: 125%;
   font-weight: 900;
-  max-width: 760px;
 }
 
 .header-content-wrapper p {
-  font-size: 42px;
   color: var(--primary);
+  font-size: 2.625rem;
+  padding-top: 60px;
   line-height: 125%;
   font-weight: 500;
   max-width: 760px;
-  padding-top: 60px;
 }
 
 .header-navigation.mobile {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
+  background-color: rgba(29, 124, 217, 0.95);
+  border-bottom-right-radius: 55px;
+  border-top-right-radius: 55px;
+  padding: 70px 20px;
   min-width: 80dvw;
   overflow: hidden;
-  background-color: rgba(29, 124, 217, 0.95);
-  padding: 70px 20px;
-  border-top-right-radius: 55px;
+  position: fixed;
+  display: block;
   z-index: 100;
-  transition: all 0.3s;
-  border-bottom-right-radius: 55px;
+  left: 0;
+  top: 0;
 }
 
 .header-navigation.mobile ul {
@@ -82,11 +82,11 @@ header {
 }
 
 .mobile-menu-burger {
-  display: none;
   flex-direction: column;
+  margin-top: 25px;
+  display: none;
   width: 74px;
   gap: 13px;
-  margin-top: 25px;
 }
 
 .mobile-menu-burger > div {
@@ -95,7 +95,7 @@ header {
   height: 9px;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .header-navigation {
     display: none;
   }
@@ -123,11 +123,6 @@ header {
   .header-navigation-wrapper h1 {
     text-align: left;
     font-weight: 700;
-    font-size: 40px;
-  }
-
-  .header-navigation-wrapper b {
-    font-size: 96px;
   }
 
   .header-content-wrapper {
@@ -144,13 +139,54 @@ header {
     line-height: 125%;
     font-weight: 900;
     max-width: 760px;
-    font-size: 64px;
   }
 
   .header-content-wrapper p {
-    font-size: 32px;
+    font-size: 2rem;
     max-width: 257px;
     padding-top: 13px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  header {
+    min-height: 1281px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  header {
+    min-height: 921px;
+  }
+
+  .mobile-menu-burger {
+    margin-top: 13px;
+    width: 50px;
+    gap: 8px;
+  }
+
+  .mobile-menu-burger > div {
+    background-color: var(--primary);
+    border-radius: 10px;
+    height: 7px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  header {
+    min-height: 821px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    min-height: 721px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    min-height: 651px;
   }
 }
 
