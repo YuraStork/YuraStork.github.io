@@ -795,6 +795,10 @@ header {
     gap: 4px;
   }
 
+  .franchise-details-wrapper {
+    border-radius: 35px;
+  }
+
   .franchise-header-title {
     font-size: 4.375rem;
   }
@@ -869,34 +873,34 @@ header {
   z-index: -1;
 }
 
-.quick-start-step-wrapper.reverse {
-  grid-template: auto auto / auto 1fr;
-}
-
-.quick-start-steps-wrapper > .quick-start-step-wrapper:nth-of-type(1) {
+.quick-start-step-wrapper.first {
   position: relative;
   top: -30px;
   left: 24%;
+  order: 1;
 }
 
-.quick-start-steps-wrapper > .quick-start-step-wrapper:nth-of-type(2) {
-  position: relative;
-  top: -105px;
-  left: 24%;
-}
-
-.quick-start-steps-wrapper > .quick-start-step-wrapper:nth-of-type(3) {
+.quick-start-step-wrapper.second {
   position: relative;
   top: -90px;
   left: 18%;
   z-index: 1;
+  order: 3;
 }
 
-.quick-start-steps-wrapper > .quick-start-step-wrapper:nth-of-type(4) {
+.quick-start-step-wrapper.third {
+  position: relative;
+  top: -105px;
+  left: 24%;
+  order: 2;
+}
+
+.quick-start-step-wrapper.fourth {
   position: relative;
   z-index: 1;
   top: -75px;
   left: 9%;
+  order: 4;
 }
 
 .quick-start-step-number {
@@ -956,15 +960,12 @@ header {
   background-color: #ff43a4;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .quick-start-section {
     padding-top: 50px;
   }
 
   .quick-start-section-title-wrapper {
-    background-color: var(--primary);
-    border-bottom-right-radius: 57px;
-    border-top-right-radius: 57px;
     margin-bottom: 14px;
     padding-right: 0px;
     max-width: 100%;
@@ -972,7 +973,6 @@ header {
   }
 
   .quick-start-section-title-wrapper::before {
-    background-color: var(--primary);
     height: 57px;
   }
 
@@ -990,64 +990,56 @@ header {
 
   .quick-start-steps-wrapper {
     background-image: url("public/images/quick-start-steps-mobile-bg.png");
-    margin-top: 20px;
     grid-template: repeat(4, auto) / 1fr;
-    min-height: 1400px;
-    gap: 0;
+    background-size: 100% 100%;
+    min-height: 1300px;
+    margin-top: 20px;
+    max-width: 646px;
+    margin: 0 auto;
   }
 
   .quick-start-step-wrapper {
-    grid-template: auto auto / auto 1fr;
     max-width: 400px;
     justify-self: end;
-    position: relative;
-    column-gap: 10px;
-    display: grid;
-    row-gap: 27px;
-    z-index: -1;
   }
 
-  .quick-start-step-wrapper.reverse {
-    justify-self: start;
-  }
-
-  .quick-start-steps-wrapper > .quick-start-step-wrapper:nth-of-type(1) {
-    position: static;
+  .quick-start-step-wrapper.first {
     justify-self: end;
-    padding-top: 60px;
+    left: 6%;
+    top: 40%;
     order: 1;
   }
 
-  .quick-start-steps-wrapper > .quick-start-step-wrapper:nth-of-type(2) {
+  .quick-start-step-wrapper.second {
     position: relative;
-    left: 20px;
-    padding-top: 100px;
-    max-width: 390px;
+    left: 6%;
+    top: -2%;
+    order: 2;
+    justify-self: start;
+  }
+
+  .quick-start-step-wrapper.third {
+    position: relative;
+    z-index: 1;
+    left: 7%;
+    top: 25%;
     order: 3;
   }
 
-  .quick-start-steps-wrapper > .quick-start-step-wrapper:nth-of-type(3) {
+  .quick-start-step-wrapper.fourth {
     position: relative;
-    padding-top: 50px;
-    left: unset;
-    top: unset;
-    z-index: 1;
-    order: 2;
-  }
-
-  .quick-start-steps-wrapper > .quick-start-step-wrapper:nth-of-type(4) {
-    position: relative;
-    left: unset;
-    top: unset;
+    justify-self: start;
+    left: 6%;
+    top: -95px;
     z-index: 1;
     order: 4;
   }
 
   .quick-start-step-number {
+    font-size: 3.625rem;
     position: relative;
     color: #23476b;
     top: -12px;
-    font-size: 58px;
   }
 
   .quick-start-step-number.reverse {
@@ -1061,8 +1053,7 @@ header {
 
   .quick-start-step-description {
     line-height: 124%;
-    font-size: 20px;
-    white-space: normal;
+    font-size: 1.25rem;
     max-width: 270px;
   }
 
@@ -1078,6 +1069,49 @@ header {
     height: 9px;
     top: -21px;
     left: 0px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .quick-start-steps-wrapper {
+    background-size: 100% auto;
+    min-height: 1010px;
+    max-width: 100%;
+    padding: 10px 10px;
+  }
+
+  .quick-start-step-wrapper {
+    row-gap: 0;
+    max-width: 200px;
+  }
+
+  .quick-start-step-description::before {
+    max-width: 100%;
+  }
+
+  .quick-start-steps-wrapper > .quick-start-step-wrapper:nth-of-type(1) {
+    left: 0%;
+    top: 10%;
+  }
+
+  .quick-start-steps-wrapper > .quick-start-step-wrapper:nth-of-type(2) {
+    position: relative;
+    left: -5%;
+    top: -75%;
+  }
+
+  .quick-start-steps-wrapper > .quick-start-step-wrapper:nth-of-type(3) {
+    position: relative;
+    left: 0%;
+    top: -10%;
+  }
+
+  .quick-start-steps-wrapper > .quick-start-step-wrapper:nth-of-type(4) {
+    position: relative;
+    left: 6%;
+    top: -95px;
+    z-index: 1;
+    order: 4;
   }
 }
 
