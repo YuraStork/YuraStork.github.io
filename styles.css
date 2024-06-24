@@ -1,12 +1,12 @@
 @import "./normalize.css";
 @import "./fonts.css";
 @import "./common.css";
-@import "./typography.css";
 @import "./modal.css";
 
 /* header */
 header {
   background: url("public/images/header-bg.png") no-repeat;
+  background-size: 100% 100%;
   padding: 53px 0 122px 0;
 }
 
@@ -20,16 +20,23 @@ header {
   display: flex;
 }
 
-.header-navigation-wrapper h1 {
+.header-main-title {
   text-transform: uppercase;
   text-align: center;
   font-weight: 900;
+  font-size: 1.5rem;
 }
 
-.header-navigation-wrapper a {
+.header-main-title b {
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+.header-navigation-link {
   text-transform: uppercase;
   color: var(--white);
   font-weight: 900;
+  font-size: 2rem;
 }
 
 .header-navigation-wrapper ul {
@@ -45,21 +52,20 @@ header {
   display: flex;
 }
 
-.header-content-wrapper h2 {
+.header-title {
   text-transform: uppercase;
   color: var(--primary);
   width: min-content;
   line-height: 125%;
   font-weight: 900;
+  font-size: 6rem;
 }
 
-.header-content-wrapper p {
+.header-description {
   color: var(--primary);
   font-size: 2.625rem;
-  padding-top: 60px;
-  line-height: 125%;
+  padding-top: 47px;
   font-weight: 500;
-  max-width: 760px;
 }
 
 .header-navigation.mobile {
@@ -119,9 +125,14 @@ header {
     color: var(--primary);
   }
 
-  .header-navigation-wrapper h1 {
+  .header-main-title {
     text-align: left;
     font-weight: 700;
+    font-size: 2.5rem;
+  }
+
+  .header-main-title b {
+    font-size: 6rem;
   }
 
   .header-content-wrapper {
@@ -133,17 +144,17 @@ header {
     flex-basis: 60%;
   }
 
-  .header-content-wrapper h2 {
+  .header-title {
     color: var(--primary);
     line-height: 125%;
     font-weight: 900;
     max-width: 760px;
   }
 
-  .header-content-wrapper p {
-    font-size: 2rem;
-    max-width: 257px;
+  .header-description {
     padding-top: 13px;
+    max-width: 257px;
+    font-size: 2rem;
   }
 }
 
@@ -155,7 +166,7 @@ header {
 
 @media screen and (max-width: 620px) {
   header {
-    min-height: 921px;
+    min-height: 1021px;
   }
 
   .mobile-menu-burger {
@@ -173,19 +184,20 @@ header {
 
 @media screen and (max-width: 520px) {
   header {
-    min-height: 821px;
+    min-height: 921px;
   }
 }
 
 @media screen and (max-width: 450px) {
   header {
-    min-height: 721px;
+    min-height: 761px;
   }
 }
 
 @media screen and (max-width: 400px) {
   header {
-    min-height: 651px;
+    min-height: 920px;
+    background-size: cover;
   }
 }
 
