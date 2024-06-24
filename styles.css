@@ -7,7 +7,6 @@
 /* header */
 header {
   background: url("public/images/header-bg.png") no-repeat;
-  background-size: 100% 100%;
   padding: 53px 0 122px 0;
 }
 
@@ -572,6 +571,17 @@ header {
   font-weight: 700;
 }
 
+@media screen and (max-width: 1500px) {
+  .benefits-title-wrapper {
+    padding-left: 108px;
+  }
+
+  .benefits-title-wrapper img {
+    height: 200px;
+    width: 200px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .benefits-section {
     padding-top: 27px;
@@ -608,13 +618,19 @@ header {
     grid-template: auto 1fr / auto 1fr;
     border-radius: 35px;
     padding: 24px 15px;
-    max-width: 678px;
+    max-width: 500px;
     gap: 20px;
   }
 
   .benefit-card-image {
     height: 65px;
     width: 65px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .benefit-card {
+    max-width: 678px;
   }
 }
 
@@ -823,7 +839,7 @@ header {
 
 .quick-start-steps-wrapper {
   background-image: url("public/images/quick-start-steps-bg.png");
-  background-size: 100% auto;
+  background-size: 93% auto;
   grid-template: auto auto / 1fr 1fr;
   background-repeat: no-repeat;
   margin-top: 150px;
@@ -853,13 +869,13 @@ header {
 
 .quick-start-steps-wrapper > .quick-start-step-wrapper:nth-of-type(2) {
   position: relative;
-  top: -130px;
+  top: -105px;
   left: 24%;
 }
 
 .quick-start-steps-wrapper > .quick-start-step-wrapper:nth-of-type(3) {
   position: relative;
-  top: -115px;
+  top: -90px;
   left: 18%;
   z-index: 1;
 }
@@ -867,8 +883,8 @@ header {
 .quick-start-steps-wrapper > .quick-start-step-wrapper:nth-of-type(4) {
   position: relative;
   z-index: 1;
-  top: -90px;
-  left: 7%;
+  top: -75px;
+  left: 9%;
 }
 
 .quick-start-step-number {
@@ -928,7 +944,7 @@ header {
   background-color: #ff43a4;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   .quick-start-section {
     padding-top: 50px;
   }
