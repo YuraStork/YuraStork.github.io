@@ -25,11 +25,6 @@
   font-weight: 900;
 }
 
-.text-3xl {
-  font-size: 70px;
-  font-weight: 900;
-}
-
 .text-4xl {
   font-size: 74px;
   font-weight: 800;
@@ -63,6 +58,10 @@
 
   .text-2xl {
     font-size: 6rem; /* 64px*/
+  }
+
+  .text-base {
+    font-size: 3rem; /* 48px*/
   }
 
   .text-lg {

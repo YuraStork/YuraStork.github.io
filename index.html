@@ -50,18 +50,18 @@
                     <img src="public/images/star.png" width="91px" height="92px" alt="star icon" />
                 </div>
 
-                <h3 class="about-us-title text-lg">8 років досвіду</h3>
+                <h3 class="about-us-title">8 років досвіду</h3>
             </div>
 
             <div class="about-us-cards-wrapper container">
                 <div class="about-us-card">
-                    <b class="text-base">
+                    <b class="about-us-card-title">
                         Інноваційні
                         <br>
                         методики навчання
                     </b>
-                    <span class="red text-3xl">1</span>
-                    <p class="text-xs">
+                    <span class="red about-us-card-number">1</span>
+                    <p class="about-us-card-description">
                         Ми використовуємо сучасні освітні технології таметодики, які сприяють всебічному розвитку
                         дитини.
                         <br>
@@ -71,25 +71,25 @@
                     </p>
                 </div>
                 <div class="about-us-card">
-                    <b class="text-base">
+                    <b class="about-us-card-title">
                         Професійний
                         <br>
                         підхід
                     </b>
-                    <span class="pink text-3xl">2</span>
-                    <p class="text-xs">
+                    <span class="pink about-us-card-number">2</span>
+                    <p class="about-us-card-description">
                         У нас ретельно розроблені стандарти та робочі інструкції для всіх
                         бізнес-процесів, перевірені нашим багаторічним досвідом.
                     </p>
                 </div>
                 <div class="about-us-card">
-                    <b class="text-base">
+                    <b class="about-us-card-title">
                         Досвідчений
                         <br>
                         персонал
                     </b>
-                    <span class="green text-3xl">3</span>
-                    <p class="text-xs">
+                    <span class="green about-us-card-number">3</span>
+                    <p class="about-us-card-description">
                         Наші педагоги проходять ретельний відбір
                         та постійне
                         підвищення кваліфікації.
@@ -101,13 +101,13 @@
                     </p>
                 </div>
                 <div class="about-us-card">
-                    <b class="text-base ">
+                    <b class="about-us-card-title">
                         Сучасна
                         <br>
                         матеріально-технічна база
                     </b>
-                    <span class="orange text-3xl">4</span>
-                    <p class="text-xs">
+                    <span class="orange about-us-card-number">4</span>
+                    <p class="about-us-card-description">
                         Наші садочки обладнані найсучаснішими
                         засобами для
                         навчання та гри.
@@ -117,13 +117,13 @@
                     </p>
                 </div>
                 <div class="about-us-card">
-                    <b class="text-base">
+                    <b class="about-us-card-title">
                         Якісне
                         <br>
                         харчування
                     </b>
-                    <span class="orange text-3xl">5</span>
-                    <p class="text-xs">
+                    <span class="orange about-us-card-number">5</span>
+                    <p class="about-us-card-description">
                         Ми створили меню
                         в нашому садочку,
                         яке є максимально різноманітним
@@ -135,39 +135,39 @@
                     </p>
                 </div>
                 <div class="about-us-card">
-                    <b class="text-base">
+                    <b class="about-us-card-title">
                         Цікава
                         <br>
                         англійська
                         <br>
                         мова
                     </b>
-                    <span class="green text-3xl">6</span>
-                    <p class="text-xs">
+                    <span class="green about-us-card-number">6</span>
+                    <p class="about-us-card-description">
                         Вивчення англійської мови у нас здійснюється через
                         захоплюючі ігри та розваги.
                     </p>
                 </div>
                 <div class="about-us-card">
-                    <b class="text-base">
+                    <b class="about-us-card-title">
                         Підготовка
                         <br>
                         до школи
                     </b>
-                    <span class="pink text-3xl">7</span>
-                    <p class="text-xs">
+                    <span class="pink about-us-card-number">7</span>
+                    <p class="about-us-card-description">
                         Ми готуємо дітей до школи за найвищими освітніми
                         стандартами, дотримуючись рекомендацій МОН.
                     </p>
                 </div>
                 <div class="about-us-card">
-                    <b class="text-base">
+                    <b class="about-us-card-title">
                         Унікальний
                         <br>
                         підхід
                     </b>
-                    <span class="red text-3xl">8</span>
-                    <p class="text-xs">
+                    <span class="red about-us-card-number">8</span>
+                    <p class="about-us-card-description">
                         Ми розуміємо, що кожна дитина унікальна.
                         <br>
                         <br>
@@ -181,88 +181,113 @@
                 <h4>ваш майбутній садочок - місце щасливих дітей</h4>
             </div>
         </section>
-        <!-- <section class="gallery-section">
+        <section class="gallery-section">
             <div class="gallery-images-wrapper">
                 <div class="gallery-image-wrapper">
                     <picture>
+                        <source media="(max-width: 1200px)" srcset="public/images/gallery-mobile-1.png">
+                        <source media="(max-width: 1200px)" srcset="public/images/gallery-mobile-1.webp"
+                            type="image/webp">
                         <source srcset="public/images/gallery-1.webp" type="image/webp">
-                        <img src="public/images/gallery-1.jpg" alt="image-1">
+                        <img class="gallery-image" src="public/images/gallery-1.jpg" alt="image-1">
                     </picture>
                 </div>
                 <div class="gallery-image-wrapper">
                     <picture>
+                        <source media="(max-width: 1200px)" srcset="public/images/gallery-mobile-2.webp"
+                            type="image/webp">
+                        <source media="(max-width: 1200px)" srcset="public/images/gallery-mobile-2.png">
                         <source srcset="public/images/gallery-2.webp" type="image/webp">
-                        <img src="public/images/gallery-2.jpg" alt="image-2">
+                        <img class="gallery-image" src="public/images/gallery-2.jpg" alt="image-2">
                     </picture>
                 </div>
                 <div class="gallery-image-wrapper">
                     <picture>
+                        <source media="(max-width: 1200px)" srcset="public/images/gallery-mobile-3.webp"
+                            type="image/webp">
+                        <source media="(max-width: 1200px)" srcset="public/images/gallery-mobile-3.png">
                         <source srcset="public/images/gallery-3.webp" type="image/webp">
-                        <img src="public/images/gallery-3.jpg" alt="image-3">
+                        <img class="gallery-image" src="public/images/gallery-3.jpg" alt="image-3">
                     </picture>
                 </div>
                 <div class="gallery-image-wrapper">
                     <picture>
+                        <source media="(max-width: 1200px)" srcset="public/images/gallery-mobile-4.webp"
+                            type="image/webp">
+                        <source media="(max-width: 1200px)" srcset="public/images/gallery-mobile-4.png">
                         <source srcset="public/images/gallery-4.webp" type="image/webp">
-                        <img src="public/images/gallery-4.jpg" alt="image-4">
+                        <img class="gallery-image" src="public/images/gallery-4.jpg" alt="image-4">
                     </picture>
                 </div>
                 <div class="gallery-image-wrapper">
                     <picture>
+                        <source media="(max-width: 1200px)" srcset="public/images/gallery-mobile-5.webp"
+                            type="image/webp">
+                        <source media="(max-width: 1200px)" srcset="public/images/gallery-mobile-5.png">
                         <source srcset="public/images/gallery-5.webp" type="image/webp">
-                        <img src="public/images/gallery-5.jpg" alt="image-5">
+                        <img class="gallery-image" src="public/images/gallery-5.jpg" alt="image-5">
                     </picture>
                 </div>
                 <div class="gallery-image-wrapper">
                     <picture>
+                        <source media="(max-width: 1200px)" srcset="public/images/gallery-mobile-6.webp"
+                            type="image/webp">
+                        <source media="(max-width: 1200px)" srcset="public/images/gallery-mobile-6.png">
                         <source srcset="public/images/gallery-6.webp" type="image/webp">
-                        <img src="public/images/gallery-6.jpg" alt="image-6">
+                        <img class="gallery-image" src="public/images/gallery-6.jpg" alt="image-6">
                     </picture>
                 </div>
                 <div class="gallery-image-wrapper">
                     <picture>
+                        <source media="(max-width: 1200px)" srcset="public/images/gallery-mobile-6.webp"
+                            type="image/webp">
+                        <source media="(max-width: 1200px)" srcset="public/images/gallery-mobile-6.png">
                         <source srcset="public/images/gallery-7.webp" type="image/webp">
-                        <img src="public/images/gallery-7.jpg" alt="image-7">
+                        <img class="gallery-image" src="public/images/gallery-7.jpg" alt="image-7">
                     </picture>
                 </div>
                 <div class="gallery-image-wrapper">
                     <picture>
+                        <source media="(max-width: 1200px)" srcset="public/images/gallery-mobile-6.webp"
+                            type="image/webp">
+                        <source media="(max-width: 1200px)" srcset="public/images/gallery-mobile-6.png">
                         <source srcset="public/images/gallery-8.webp" type="image/webp">
-                        <img src="public/images/gallery-8.jpg" alt="image-8">
+                        <img class="gallery-image" src="public/images/gallery-8.jpg" alt="image-8">
                     </picture>
                 </div>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section id="benefits" class="benefits-section">
+        <section id="benefits" class="benefits-section">
             <div class="container">
                 <div class="benefits-title-wrapper">
                     <img src="public/images/benefits-title-checkmark.png" width="256px" height="291px" alt="">
-                    <h4 class="text-lg">переваги нашої <br> франшизи</h3>
+                    <h4 class="benefits-title">переваги нашої <br> франшизи</h3>
                 </div>
 
                 <div class="benefits-cards-wrapper">
                     <div class="benefit-card">
-                        <img src="./public/images/checkmark.png" alt="checkmark">
-                        <b class="text-base">Фінансова <br>стабільність</b>
-                        <p class="text-xs">Інвестиції у відкриття приватного садочку можуть швидко окупитися завдяки
+                        <img class="benefit-card-image" src="./public/images/checkmark.png" alt="checkmark">
+                        <b class="benefit-card-title">Фінансова <br>стабільність</b>
+                        <p class="benefit-card-description">Інвестиції у відкриття приватного садочку можуть швидко
+                            окупитися завдяки
                             стабільному доходу
                             та ефективному бізнес-плану.</p>
                     </div>
 
                     <div class="benefit-card">
-                        <img src="./public/images/checkmark.png" alt="checkmark">
-                        <b class="text-base">Досвід <br>та експертиза</b>
-                        <p class="text-xs">Наша команда має багаторічний досвід у сфері освіти.
+                        <img class="benefit-card-image" src="./public/images/checkmark.png" alt="checkmark">
+                        <b class="benefit-card-title">Досвід <br>та експертиза</b>
+                        <p class="benefit-card-description">Наша команда має багаторічний досвід у сфері освіти.
                             <br><br>
                             Ми знаємо, як створити садочок, який буде популярним серед батьків та діток.
                         </p>
                     </div>
 
                     <div class="benefit-card">
-                        <img src="./public/images/checkmark.png" alt="checkmark">
-                        <b class="text-base">Повний <br>супровід</b>
-                        <p class="text-xs">Розробка та затвердження бізнес моделі.
+                        <img class="benefit-card-image" src="./public/images/checkmark.png" alt="checkmark">
+                        <b class="benefit-card-title">Повний <br>супровід</b>
+                        <p class="benefit-card-description">Розробка та затвердження бізнес моделі.
                             <br><br>
                             Підбір приміщення та
                             дизайн-проєкт.
@@ -272,9 +297,10 @@
                     </div>
 
                     <div class="benefit-card">
-                        <img src="./public/images/checkmark.png" alt="checkmark">
-                        <b class="text-base">Підтримка <br>та навчання</b>
-                        <p class="text-xs">Підтримка та навчання. Ми підбираємо та постійно навчаємо персонал.
+                        <img class="benefit-card-image" src="./public/images/checkmark.png" alt="checkmark">
+                        <b class="benefit-card-title">Підтримка <br>та навчання</b>
+                        <p class="benefit-card-description">Підтримка та навчання. Ми підбираємо та постійно навчаємо
+                            персонал.
                             <br><br>
                             Ви отримаєте доступ до наших перевірених програм та методик навчання, франчазі підключені до
                             навчальної онлайн-системи, яка допоможе вам завжди бути в курсі останніх тенденцій виховання
@@ -283,16 +309,19 @@
                     </div>
 
                     <div class="benefit-card">
-                        <img src="./public/images/checkmark.png" alt="checkmark" width="86px" height="86px">
-                        <b class="text-base">Маркетингова <br>підтримка.</b>
-                        <p class="text-xs">Ми надаємо готові маркетингові стратегії та постійно допомагаємо
+                        <img class="benefit-card-image" src="./public/images/checkmark.png" alt="checkmark" width="86px"
+                            height="86px">
+                        <b class="benefit-card-title">Маркетингова <br>підтримка.</b>
+                        <p class="benefit-card-description">Ми надаємо готові маркетингові стратегії та постійно
+                            допомагаємо
                             з просуванням вашого садочку на ринку.</p>
                     </div>
 
                     <div class="benefit-card">
-                        <img src="./public/images/checkmark.png" alt="checkmark">
-                        <b class="text-base">Фінансова <br>стабільність</b>
-                        <p class="text-xs">Ми цінуємо кожного нашого партнера та готові надавати всебічну підтримку у
+                        <img class="benefit-card-image" src="./public/images/checkmark.png" alt="checkmark">
+                        <b class="benefit-card-title">Партнерство <br>на рівних.</b>
+                        <p class="benefit-card-description">Ми цінуємо кожного нашого партнера та готові надавати
+                            всебічну підтримку у
                             веденні бізнесу.
                             <br><br>
                             За вами буде закріплений персональний менеджер, на якого ви завжди можете розраховувати для
@@ -302,107 +331,110 @@
                 </div>
 
             </div>
-        </section> -->
-        <!-- 
+        </section>
+
         <section id="price" class="price-section">
             <div class="container">
                 <div class="price-section-header">
-                    <img src="public/images/calculator.png" alt="Калькулятор">
-                    <h4 class="text-lg">формати садочків</h4>
-                    <p class="text-m">*Вибір формату дитячого садка залежить від чисельності <br>
+                    <img class="price-section-header-image" src="public/images/calculator.png" alt="Калькулятор">
+                    <h4 class="price-section-header-title">формати садочків</h4>
+                    <p class="price-section-header-description">*Вибір формату дитячого садка залежить від чисельності
+                        <br>
                         населення, розміру приміщення та обсягу інвестицій. <br>
-                        Можливий також індивідуальний розрахунок відповідно до вашого запиту.</p>
+                        Можливий також індивідуальний розрахунок відповідно до вашого запиту.
+                    </p>
                 </div>
 
                 <div class="franchises-wrapper">
                     <div class="franchise">
-                        <div>
-                            <b class="text-5xl">4 групи</b>
+                        <div class="franchise-header">
+                            <b class="franchise-header-title">4 групи</b>
                         </div>
-                        <div class="text-sm">
+                        <div class="franchise-details-wrapper">
                             <b>Кількість дітей </b>
                             <b>40</b>
                         </div>
-                        <div class="text-sm">
+                        <div class="franchise-details-wrapper">
                             <b>Кількість персоналу</b>
                             <b>12</b>
                         </div>
-                        <div class="text-sm">
+                        <div class="franchise-details-wrapper">
                             <b>Інвестиції</b>
                             <b>від 45 000 у.о.</b>
                         </div>
-                        <div class="text-sm">
+                        <div class="franchise-details-wrapper">
                             <b>Період окупності</b>
                             <b>2 років</b>
                         </div>
-                        <div class="text-sm">
+                        <div class="franchise-details-wrapper">
                             <b>Площа приміщення </b>
                             <b>від 240 кв.м</b>
                         </div>
-                        <div class="text-sm">
+                        <div class="franchise-details-wrapper">
                             <b>Роялті <br>
                                 (0%  перші 6 місяців)
                             </b>
                             <b>5%</b>
                         </div>
-                        <div class="text-sm">
+                        <div class="franchise-details-wrapper">
                             <b>Чистий прибуток в місяць <br>
                                 при повному заповненні</b>
                             <b>3 000 у.о.</b>
                         </div>
-                        <div>
-                            <b class="text-5xl">Вартість франшизи <br>
+                        <div class="franchise-footer">
+                            <b class="franchise-footer-title">Вартість франшизи <br>
                                 7 000 у.о.</b>
                         </div>
                     </div>
+
                     <div class="franchise">
-                        <div>
-                            <b class="text-5xl">4 групи</b>
+                        <div class="franchise-header">
+                            <b class="franchise-header-title">6 груп</b>
                         </div>
-                        <div class="text-sm">
+                        <div class="franchise-details-wrapper">
                             <b>Кількість дітей </b>
                             <b>60</b>
                         </div>
-                        <div class="text-sm">
+                        <div class="franchise-details-wrapper">
                             <b>Кількість персоналу</b>
                             <b>16</b>
                         </div>
-                        <div class="text-sm">
+                        <div class="franchise-details-wrapper">
                             <b>Інвестиції</b>
                             <b>від 55 000 у.о.</b>
                         </div>
-                        <div class="text-sm">
+                        <div class="franchise-details-wrapper">
                             <b>Період окупності</b>
                             <b>2 років</b>
                         </div>
-                        <div class="text-sm">
+                        <div class="franchise-details-wrapper">
                             <b>Площа приміщення </b>
                             <b>від 360 кв.м</b>
                         </div>
-                        <div class="text-sm">
+                        <div class="franchise-details-wrapper">
                             <b>Роялті <br>
                                 (0%  перші 6 місяців)
                             </b>
                             <b>5%</b>
                         </div>
-                        <div class="text-sm">
+                        <div class="franchise-details-wrapper">
                             <b>Чистий прибуток в місяць <br>
                                 при повному заповненні</b>
                             <b>4 500 у.о.</b>
                         </div>
-                        <div>
-                            <b class=text-5xl>Вартість франшизи <br>
+                        <div class="franchise-footer">
+                            <b class="franchise-footer-title">Вартість франшизи <br>
                                 8 000 у.о.</b>
                         </div>
                     </div>
                 </div>
             </div>
-        </section> -->
-        <!-- 
+        </section>
+
         <section class="quick-start-section">
             <div class="container">
-                <div class="quick-start-section-title">
-                    <h4 class="text-6xl">
+                <div class="quick-start-section-title-wrapper">
+                    <h4 class="quick-start-section-title">
                         швидкий старт
                     </h4>
 
@@ -411,25 +443,25 @@
 
                 <div class="quick-start-steps-wrapper">
                     <div class="quick-start-step-wrapper">
-                        <span class="quick-start-step-number text-4xl">01</span>
-                        <b class="quick-start-step-title text-m">ЗУСТРІЧАЄМОСЯ <br>ОНЛАЙН</b>
+                        <span class="quick-start-step-number">01</span>
+                        <b class="quick-start-step-title">ЗУСТРІЧАЄМОСЯ <br>ОНЛАЙН</b>
                         <p class="quick-start-step-description">Обговоримо всі <br>
                             деталі франшизи.</p>
                     </div>
 
                     <div class="quick-start-step-wrapper">
-                        <span class="quick-start-step-number text-4xl">03</span>
+                        <span class="quick-start-step-number">03</span>
                         <b class="quick-start-step-title">ПОГОДЖЕННЯ ПРИМІЩЕННЯ <br>
                             ТА ЗАПУСК ПРОЦЕСУ <br>
                             ВІДКРИТТЯ</b>
-                        <p class="quick-start-step-description third text-sm">ООцінюємо ваше приміщення <br>
+                        <p class="quick-start-step-description third">Оцінюємо ваше приміщення <br>
                             або допомагаємо знайти нове, <br>
                             і спільно починаємо виконувати <br>
                             необхідні кроки.</p>
                     </div>
 
                     <div class="quick-start-step-wrapper reverse">
-                        <span class="quick-start-step-number text-4xl reverse">02</span>
+                        <span class="quick-start-step-number reverse">02</span>
                         <b class="quick-start-step-title">РОЗРАХУНОК <br>
                             ФІНАНСОВОЇ <br>
                             МОДЕЛІ</b>
@@ -441,22 +473,22 @@
 
 
                     <div class="quick-start-step-wrapper reverse">
-                        <span class="quick-start-step-number text-4xl reverse">04</span>
+                        <span class="quick-start-step-number reverse">04</span>
                         <b class="quick-start-step-title">УРОЧИСТО<br>
                             ВІДКРИВАЄМО<br>
                             ДИТЯЧИЙ<br>
                             САДОК</b>
                         <p class="quick-start-step-description reverse fourth">Успішно заповнюємо дитсадок <br>
-                            на першими клієнтами</p>
+                            першими клієнтами</p>
                     </div>
                 </div>
 
             </div>
-        </section> -->
+        </section>
 
     </main>
 
-    <!-- <footer id="contacts">
+    <footer id="contacts">
         <div class="leave-application-wrapper">
             <div class="container">
                 <a id="open-modal-btn" href="" class="leave-application-link text-4xl">залишити заявку</a>
@@ -464,13 +496,13 @@
         </div>
 
         <div class="container footer-contacts-wrapper">
-            <h5 class="text-6xl">контакти</h5>
-            <a href="tel:+0673773827" class="text-xl">067 377 38 27</a>
-            <a href="mailto:synergy.org.ua@gmail.com" class="text-xl">synergy.org.ua@gmail.com</a>
-            <a href="https://maps.app.goo.gl/qr6xieVnve56xotXA" class="text-xl">Котеджне містечко Довжик,
+            <h5 class="footer-title">контакти</h5>
+            <a href="tel:+0673773827">067 377 38 27</a>
+            <a href="mailto:synergy.org.ua@gmail.com">synergy.org.ua@gmail.com</a>
+            <a href="https://maps.app.goo.gl/qr6xieVnve56xotXA">Котеджне містечко Довжик,
                 <br>
                 вул. Богунська, 2</a>
-            <b class="contact-link text-xl">ПОНЕДІЛОК - ПЯТНИЦЯ <br>
+            <b>ПОНЕДІЛОК - ПЯТНИЦЯ <br>
                 8:30 - 18:00</b>
 
             <div class="social-links-wrapper">
@@ -493,7 +525,7 @@
         </div>
 
         <div class="footer-empty-box"></div>
-    </footer> -->
+    </footer>
 
     <div id="modal" class="modal" tabindex="-1" role="dialog">
         <div class="modal-content-container">
