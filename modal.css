@@ -17,11 +17,12 @@
   background-color: var(--white);
   border-radius: 65px;
   max-height: 718px;
-  max-width: 80vw;
-  overflow: auto;
+  max-width: 1659px;
+  overflow: scroll;
+  margin: 0 10px;
 }
 
-.modal-content-header {
+.modal-header {
   background-color: var(--primary);
   justify-content: center;
   align-items: center;
@@ -29,27 +30,103 @@
   position: relative;
   text-align: center;
   font-weight: 900;
-  font-size: 48px;
+  font-size: 3rem;
   height: 140px;
   display: flex;
 }
 
-.modal-content-header br {
+.modal-content-wrapper {
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 70px 0px 61px;
+  display: grid;
+  gap: 78px;
+  align-items: flex-start;
+}
+
+.modal-right-content-wrapper {
+  text-align: center;
+  color: #1273d7;
+}
+
+.modal-right-content-wrapper img {
+  position: relative;
+  top: -30px;
+}
+
+.modal-right-content-title {
+  text-transform: uppercase;
+  font-size: 8rem;
+  font-weight: 900;
+}
+
+.modal-right-content-description {
+  font-family: "Balsamiq Sans";
+  position: relative;
+  font-size: 3.75rem;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.modal-header br {
   display: none;
 }
 
-.modal-content-header img {
+.modal-title {
+  font-size: 4.75rem;
+  font-weight: 900;
+}
+
+.modal-close-icon {
   position: absolute;
   right: 40px;
   top: 40px;
 }
 
-.modal-content-wrapper {
+/* form */
+form {
+  flex-direction: column;
+  max-width: 745px;
+  margin-top: 23px;
   display: flex;
-  padding: 20px 70px 74px 61px;
-  gap: 78px;
-  align-items: center;
+  gap: 15px;
 }
+
+.text-field {
+  border: 6px solid var(--primary);
+  color: var(--primary);
+  transition: all 0.3s;
+  border-radius: 45px;
+  padding-left: 65px;
+  font-weight: 500;
+  font-size: 36px;
+  height: 104px;
+}
+
+.text-field::placeholder {
+  text-underline-offset: 5px;
+  text-decoration: underline;
+  color: #799bbd;
+}
+
+.text-field:valid {
+  background-color: rgba(5, 255, 5, 0.641);
+}
+
+.submit-button {
+  background-color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding: 24px 100px;
+  color: var(--white);
+  border-radius: 40px;
+  font-size: 2.5rem;
+  font-weight: 900;
+  max-width: 482px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+/* backdrop */
 
 .backdrop {
   background-color: rgba(0, 0, 0, 0.5);
@@ -66,55 +143,58 @@
   display: block;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 745px;
-  flex: 1;
-}
-
-.text-field {
-  height: 104px;
-  border-radius: 45px;
-  padding-left: 65px;
-  font-size: 36px;
-  font-weight: 500;
-  color: var(--primary);
-  transition: all 0.3s;
-  border: 6px solid var(--primary);
-}
-
-.text-field::placeholder {
-  color: #799bbd;
-  text-decoration: underline;
-  text-underline-offset: 5px;
-}
-
-.text-field:valid {
-  background-color: rgba(5, 255, 5, 0.641);
-}
-
-.submit-button {
-  background-color: var(--primary);
-  padding: 24px 100px;
-  color: var(--white);
-  font-size: 40px;
-  font-weight: 900;
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  border-radius: 40px;
-  max-width: 482px;
-  margin: 0 auto;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 575px) {
-  .modal-content-header {
-    height: 100px;
+@media screen and (max-width: 1200px) {
+  .modal-title {
+    font-size: 3rem;
+    line-height: auto;
   }
 
-  .modal-content-header {
-    font-size: 28px;
+  .modal-close-icon {
+    width: 22px;
+    height: 22px;
+    top: 34px;
+    right: 30px;
+  }
+
+  .modal-header br {
+    display: block;
+  }
+
+  .modal-content-container {
+    background-color: var(--white);
+    border-radius: 65px;
+    max-height: auto;
+    max-width: 624px;
+    overflow: auto;
+    width: 100%;
+  }
+
+  .modal-content-wrapper {
+    padding: 25px 30px 42px 30px;
+    grid-template: auto / minmax(auto, 464px);
+    justify-content: center;
+  }
+
+  form {
+    margin-top: 0;
+    gap: 4px;
+  }
+
+  .text-field {
+    height: 72px;
+    padding-left: 45px;
+    font-size: 24px;
+  }
+
+  .modal-right-content-wrapper {
+    display: none;
+  }
+
+  .submit-button {
+    padding: 15px 10px;
+    max-width: 304px;
+    font-size: 1.5rem;
+    margin-top: 12px;
+    width: 100%;
   }
 }

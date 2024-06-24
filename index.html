@@ -491,7 +491,7 @@
     <footer id="contacts">
         <div class="leave-application-wrapper">
             <div class="container">
-                <a id="open-modal-btn" href="" class="leave-application-link text-4xl">залишити заявку</a>
+                <button id="open-modal-btn" class="leave-application-button">залишити заявку</button>
             </div>
         </div>
 
@@ -529,15 +529,16 @@
 
     <div id="modal" class="modal" tabindex="-1" role="dialog">
         <div class="modal-content-container">
-            <div class="modal-content-header">
-                <b>Заявка<br> на партнерство</b>
+            <div class="modal-header">
+                <b class="modal-title">Заявка<br> на партнерство</b>
                 <button id="close-modal-btn" class="icon-button">
-                    <img src="public/images/modal-close-icon.png" width="22px" height="22px" alt="">
+                    <img class="modal-close-icon" src="public/images/modal-close-icon.png" width="37" height="37"
+                        alt="">
                 </button>
             </div>
 
             <div class="modal-content-wrapper">
-                <form class="order-form" action="https://formsubmit.co/7aaa4460c33fa6c67c272eee2ee3d620" method="POST">
+                <form class="order-form" action="https://formsubmit.co/mailsinergiya@gmail.com" method="POST">
                     <input tabindex="1" autocomplete="off" autofocus name='fullname' maxlength="100" class="text-field"
                         placeholder="П.І.Б" type="text" required>
                     <input tabindex="1" name='phone' autocomplete="off" class="text-field"
@@ -548,9 +549,9 @@
                     <button class="submit-button" tabindex="1" type="submit">Відправити</button>
                 </form>
 
-                <div>
-                    <b>Синергія</b>
-                    <p>дитячий садочок</p>
+                <div class="modal-right-content-wrapper">
+                    <b class="modal-right-content-title">Синергія</b>
+                    <p class="modal-right-content-description">дитячий садочок</p>
                     <img tabindex="1" src="public/images/modal-image.png" width="364" height="364" alt="">
                 </div>
             </div>
