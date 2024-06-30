@@ -14,16 +14,14 @@
 }
 
 .modal-content-container {
-  background-color: var(--white);
-  border-radius: 65px;
-  max-height: 718px;
   max-width: 1659px;
-  overflow: scroll;
-  margin: 0 10px;
+  max-height: 80vh;
 }
 
 .modal-header {
   background-color: var(--primary);
+  border-top-right-radius: 65px;
+  border-top-left-radius: 65px;
   justify-content: center;
   align-items: center;
   color: var(--white);
@@ -36,11 +34,14 @@
 }
 
 .modal-content-wrapper {
+  border-bottom-right-radius: 65px;
+  border-bottom-left-radius: 65px;
   grid-template-columns: 1fr 1fr;
+  background-color: var(--white);
   padding: 20px 70px 0px 61px;
+  align-items: flex-start;
   display: grid;
   gap: 78px;
-  align-items: flex-start;
 }
 
 .modal-right-content-wrapper {
@@ -77,6 +78,7 @@
 }
 
 .modal-close-icon {
+  cursor: pointer;
   position: absolute;
   right: 40px;
   top: 40px;
@@ -100,6 +102,7 @@ form {
   font-weight: 500;
   font-size: 36px;
   height: 104px;
+  width: 100%;
 }
 
 .text-field::placeholder {
@@ -143,47 +146,47 @@ form {
   display: block;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 996px) {
+  .modal-content-container {
+    max-width: 626px;
+    width: 100%;
+  }
+
   .modal-title {
     font-size: 3rem;
-    line-height: auto;
   }
 
   .modal-close-icon {
-    width: 22px;
     height: 22px;
-    top: 34px;
+    width: 22px;
     right: 30px;
+    top: 34px;
   }
 
   .modal-header br {
     display: block;
   }
 
-  .modal-content-container {
-    background-color: var(--white);
-    border-radius: 65px;
-    max-height: auto;
-    max-width: 624px;
-    overflow: auto;
-    width: 100%;
-  }
-
   .modal-content-wrapper {
     padding: 25px 30px 42px 30px;
-    grid-template: auto / minmax(auto, 464px);
     justify-content: center;
+    grid-template-columns: auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
   }
 
   form {
     margin-top: 0;
+    max-width: fit-content;
     gap: 4px;
   }
 
   .text-field {
-    height: 72px;
-    padding-left: 45px;
+    padding: 10px 10px 10px 35px;
+    border-radius: 35px;
     font-size: 24px;
+    height: auto;
   }
 
   .modal-right-content-wrapper {
@@ -196,5 +199,28 @@ form {
     font-size: 1.5rem;
     margin-top: 12px;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .text-field {
+    border-radius: 25px;
+    padding-left: 35px;
+    font-size: 26px;
+    height: auto;
+  }
+
+  .modal-content-container {
+    max-width: 95vw;
+  }
+
+  .modal-content-wrapper {
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+  }
+
+  .modal-header {
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
   }
 }

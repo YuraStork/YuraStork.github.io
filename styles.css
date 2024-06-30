@@ -533,7 +533,7 @@ header {
 }
 /* gallery */
 .gallery-images-wrapper {
-  grid-template: 350px 350px / 0.75fr 1fr 1fr 0.75fr;
+  grid-template: repeat(2, auto) / 0.75fr 1fr 1fr 0.75fr;
   column-gap: 11px;
   row-gap: 32px;
   display: grid;
@@ -543,9 +543,10 @@ header {
   background-color: transparent;
   height: 100%;
   width: 100%;
+  max-height: 350px;
 }
 
-@media screen and (max-width: 996px) {
+@media screen and (max-width: 1200px) {
   .gallery-images-wrapper {
     grid-template: repeat(2, 306px) / 1fr 1fr 1fr;
     padding: 0px 10px;
