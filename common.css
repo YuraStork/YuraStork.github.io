@@ -34,89 +34,6 @@ html {
   font-size: 100%;
 }
 
-@media screen and (max-width: 1800px) {
-  html {
-    font-size: 90%;
-  }
-}
-
-@media screen and (max-width: 1700px) {
-  html {
-    font-size: 85%;
-  }
-}
-
-@media screen and (max-width: 1600px) {
-  html {
-    font-size: 80%;
-  }
-}
-
-@media screen and (max-width: 1500px) {
-  html {
-    font-size: 75%;
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  html {
-    font-size: 70%;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  html {
-    font-size: 65%;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  html {
-    font-size: 100%;
-  }
-}
-
-@media screen and (max-width: 690px) {
-  html {
-    font-size: 95%;
-  }
-}
-@media screen and (max-width: 650px) {
-  html {
-    font-size: 85%;
-  }
-}
-
-@media screen and (max-width: 630px) {
-  html {
-    font-size: 75%;
-  }
-}
-
-@media screen and (max-width: 610px) {
-  html {
-    font-size: 70%;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  html {
-    font-size: 65%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  html {
-    font-size: 60%;
-  }
-}
-
-@media screen and (max-width: 430px) {
-  html {
-    font-size: 50%;
-  }
-}
-
 :root {
   --primary: #076fd9;
   --white: #fff;
@@ -128,7 +45,7 @@ body {
   font-family: "Montserrat";
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 996px) {
   body {
     background-color: #eae9e8;
   }
@@ -163,33 +80,8 @@ body.disable {
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 680px) {
   .container {
     padding: 0 10px;
   }
 }
-
-/* @media screen and (max-width: 1200px) {
-  .container {
-    max-width: 100%
-  }
-} */
-
-/* @media screen and (max-width: 992px) {
-  .container {
-    max-width: 962px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    max-width: 100%;
-    padding: 0px 37px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .container {
-    max-width: 100%;
-  }
-} */
