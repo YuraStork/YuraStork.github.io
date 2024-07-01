@@ -758,6 +758,13 @@ header {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .benefits-title-wrapper img {
+    height: 101px;
+    width: 90px;
+  }
+}
+
 /* price */
 .price-section {
   padding-top: 34px;
