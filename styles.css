@@ -23,22 +23,29 @@ header {
 }
 
 .header-main-title {
-  text-transform: uppercase;
   text-align: center;
   font-weight: 900;
   font-size: 1.5rem;
 }
 
 .header-main-title b {
+  text-transform: uppercase;
   font-weight: 900;
   font-size: 4rem;
 }
 
 .header-navigation-link {
   text-transform: uppercase;
+  transition: all 0.3s;
   color: var(--white);
   font-weight: 900;
   font-size: 2rem;
+}
+
+.header-navigation-link:hover {
+  text-decoration-line: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 5px;
 }
 
 .header-navigation-wrapper ul {
@@ -123,7 +130,7 @@ header {
     background-size: 100% 100%;
     padding: 10px 0 32px 0;
     background-position: unset;
-    min-height: 1381px;
+    min-height: 1481px;
   }
 
   .header-navigation {
@@ -186,15 +193,9 @@ header {
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 650px) {
   header {
-    min-height: 1181px;
-  }
-}
-
-@media screen and (max-width: 620px) {
-  header {
-    min-height: 1051px;
+    min-height: 1151px;
   }
 
   .mobile-menu-burger {
@@ -685,12 +686,24 @@ header {
 
 @media screen and (max-width: 1500px) {
   .benefits-title-wrapper {
-    padding-left: 108px;
+    padding-left: 68px;
   }
 
   .benefits-title-wrapper img {
     height: 200px;
     width: 200px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .benefit-card {
+    max-width: 450px;
+    align-items: center;
+  }
+
+  .benefit-card-image {
+    height: 75px;
+    width: 75px;
   }
 }
 
@@ -729,8 +742,6 @@ header {
   .benefit-card {
     background-color: rgb(255, 255, 255, 0.7);
     grid-template: auto 1fr / auto 1fr;
-    border-radius: 35px;
-    padding: 24px 15px;
     max-width: 500px;
     gap: 20px;
   }
@@ -1207,7 +1218,8 @@ header {
 /* footer */
 footer {
   background: url("public/images/footer-bg.png") no-repeat;
-  background-size: 100% 100%;
+  background-position: 70% 10%;
+  background-size: cover;
 }
 
 .leave-application-wrapper {
@@ -1310,7 +1322,11 @@ footer {
   height: 186px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 996px) {
+  footer {
+    background-position: 70% 70%;
+  }
+
   .leave-application-wrapper {
     padding: 26px 0;
   }
