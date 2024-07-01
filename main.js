@@ -1,45 +1,61 @@
-function freezeBody() {
-  const body = document.querySelector("body");
-  const backdrop = document.querySelector("#backdrop");
-
-  body.classList.toggle("disable");
-  backdrop.classList.toggle("show");
-}
+const body = document.querySelector("body");
+const backdrop = document.querySelector("#backdrop");
 
 function applyApplicationControl() {
+  const openModalButton = document.querySelector("#open-modal-btn");
   const closeModalBtn = document.querySelector("#close-modal-btn");
-  const button = document.querySelector("#open-modal-btn");
   const modal = document.querySelector("#modal");
 
-  button.addEventListener("click", (event) => {
-    event.preventDefault();
-    modal.classList.toggle("show");
-    freezeBody();
+  const modalContentContainer = document.querySelector(
+    "#modal-content-container"
+  );
+
+  openModalButton.addEventListener("click", (event) => {
+    event.stopPropagation();
+
+    body.classList.add("open-modal");
+    backdrop.classList.add("show");
+    modal.classList.add("show");
   });
 
   closeModalBtn.addEventListener("click", () => {
-    modal.classList.toggle("show");
-    freezeBody();
+    body.classList.remove("open-modal");
+    backdrop.classList.remove("show");
+    modal.classList.remove("show");
+  });
+
+  modalContentContainer.addEventListener("click", (event) => {
+    event.stopPropagation();
+  });
+
+  window.addEventListener("click", () => {
+    if (modal.classList.contains("show")) {
+      body.classList.remove("open-modal");
+      backdrop.classList.remove("show");
+      modal.classList.remove("show");
+    }
   });
 }
 
 function main() {
   const mobileMenuBurger = document.querySelector("#mobile-menu-burger");
   const headerNavigation = document.querySelector("#header-navigation");
-  const headerNavigationWrapper = document.querySelector(
-    ".header-navigation-wrapper"
-  );
+  const headerNavigationWrapper = document.querySelector("#header-navigation");
 
-  const body = document.body;
+  mobileMenuBurger.addEventListener("click", (event) => {
+    event.stopPropagation();
 
-  mobileMenuBurger.addEventListener("click", () => {
-    headerNavigation.classList.toggle("mobile");
-    body.classList.toggle("freeze");
+    headerNavigation.classList.add("mobile");
+    body.classList.add("open-modal");
+    backdrop.classList.add("show");
   });
 
   window.addEventListener("click", () => {
-    headerNavigation.classList.remove("mobile");
-    body.classList.remove("freeze");
+    if (headerNavigation.classList.contains("mobile")) {
+      headerNavigation.classList.remove("mobile");
+      body.classList.remove("open-modal");
+      backdrop.classList.remove("show");
+    }
   });
 
   headerNavigationWrapper.addEventListener("click", (event) => {

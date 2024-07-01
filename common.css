@@ -51,7 +51,7 @@ body {
   }
 }
 
-body.disable {
+body.open-modal {
   overflow: hidden;
 }
 
