@@ -97,10 +97,27 @@ header {
 
 .mobile-menu-burger {
   flex-direction: column;
+  transition: all 0.3s;
   margin-top: 25px;
   display: none;
   width: 74px;
   gap: 13px;
+}
+
+.mobile-menu-burger:active {
+  transform: scale(85%);
+}
+
+.mobile-menu-burger.open div:nth-child(1) {
+  transform: rotate(45deg) translate(14px, 14px);
+}
+
+.mobile-menu-burger.open div:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-burger.open div:nth-child(3) {
+  transform: rotate(-45deg) translate(7.5px, -7.5px);
 }
 
 .mobile-menu-burger > div {
@@ -484,7 +501,6 @@ header {
     line-height: 115%;
     color: #293746;
     margin-top: 10px;
-    letter-spacing: -2%;
   }
 
   .about-us-subtitle {
@@ -1244,7 +1260,9 @@ footer {
   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.4);
   background-color: var(--white);
   text-transform: uppercase;
+  border-color: transparent;
   color: var(--primary);
+  transition: all 0.3s;
   letter-spacing: 13px;
   border-radius: 73px;
   font-size: 4.625rem;
@@ -1254,6 +1272,14 @@ footer {
   cursor: pointer;
   padding: 10px 0;
   flex-grow: 1;
+}
+
+.leave-application-button:hover {
+  transform: scale(95%);
+}
+
+.leave-application-button:active {
+  transform: scale(90%);
 }
 
 .footer-contacts-wrapper {
@@ -1292,6 +1318,18 @@ footer {
   align-self: stretch;
   display: flex;
   gap: 21px;
+}
+
+.social-links-wrapper a {
+  transition: all 0.3s;
+}
+
+.social-links-wrapper a:hover {
+  transform: scale(95%);
+}
+
+.social-links-wrapper a:active {
+  transform: scale(90%);
 }
 
 .footer-right-label {

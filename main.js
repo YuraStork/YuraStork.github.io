@@ -46,6 +46,7 @@ function main() {
     event.stopPropagation();
 
     headerNavigation.classList.add("mobile");
+    mobileMenuBurger.classList.add("open");
     body.classList.add("open-modal");
     backdrop.classList.add("show");
   });
@@ -53,6 +54,7 @@ function main() {
   window.addEventListener("click", () => {
     if (headerNavigation.classList.contains("mobile")) {
       headerNavigation.classList.remove("mobile");
+      mobileMenuBurger.classList.remove("open");
       body.classList.remove("open-modal");
       backdrop.classList.remove("show");
     }

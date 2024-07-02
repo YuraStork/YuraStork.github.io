@@ -79,11 +79,22 @@
   font-weight: 900;
 }
 
-.modal-close-icon {
-  cursor: pointer;
+.close-modal-btn {
+  background: transparent;
+  transition: all 0.3s;
   position: absolute;
+  cursor: pointer;
+  border: none;
   right: 40px;
   top: 40px;
+}
+
+.close-modal-btn:hover {
+  transform: scale(90%);
+}
+
+.close-modal-btn:active {
+  transform: scale(80%);
 }
 
 /* form */
@@ -120,6 +131,7 @@ form {
 .submit-button {
   background-color: var(--primary);
   text-transform: uppercase;
+  transition: all 0.3s;
   letter-spacing: -1px;
   padding: 24px 100px;
   color: var(--white);
@@ -129,6 +141,14 @@ form {
   max-width: 482px;
   cursor: pointer;
   margin: 0 auto;
+}
+
+.submit-button:hover {
+  transform: scale(95%);
+}
+
+.submit-button:active {
+  transform: scale(90%);
 }
 
 /* backdrop */

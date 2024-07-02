@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk-UA">
 
 <head>
     <meta charset="UTF-8">
@@ -30,7 +30,7 @@
                     </ul>
                 </nav>
 
-                <div id="mobile-menu-burger" class="mobile-menu-burger">
+                <div id="mobile-menu-burger" class="mobile-menu-burger" role="menu" aria-label="Відкрити меню">
                     <div></div>
                     <div></div>
                     <div></div>
@@ -543,32 +543,32 @@
         <div class="footer-empty-box"></div>
     </footer>
 
-    <div id="modal" class="modal" tabindex="-1" role="dialog">
+    <div id="modal" class="modal" tabindex="0" role="dialog">
         <div id="modal-content-container" class="modal-content-container">
             <div class="modal-header">
                 <b class="modal-title">Заявка<br> на партнерство</b>
-                <button id="close-modal-btn" class="icon-button">
+                <button id="close-modal-btn" tabindex="0" class="close-modal-btn">
                     <img class="modal-close-icon" src="public/images/modal-close-icon.png" width="37" height="37"
-                        alt="">
+                        alt="Кнопка закриття">
                 </button>
             </div>
 
             <div class="modal-content-wrapper">
                 <form class="order-form" action="https://formsubmit.co/mailsinergiya@gmail.com" method="POST">
-                    <input tabindex="1" autocomplete="off" autofocus name='fullname' maxlength="100" class="text-field"
+                    <input tabindex="0" autocomplete="off" autofocus name='fullname' maxlength="100" class="text-field"
                         placeholder="П.І.Б" type="text" required>
-                    <input tabindex="1" name='phone' autocomplete="off" class="text-field"
+                    <input tabindex="0" name='phone' autocomplete="off" class="text-field"
                         placeholder="+38 (***) *** ** **" required type="text" pattern="^\+?38\d{10}$">
-                    <input tabindex="1" name='city' autocomplete="off" maxlength="100" class="text-field"
+                    <input tabindex="0" name='city' autocomplete="off" maxlength="100" class="text-field"
                         placeholder="Місто" type="text" required>
 
-                    <button class="submit-button" tabindex="1" type="submit">Відправити</button>
+                    <button class="submit-button" tabindex="0" type="submit">Відправити</button>
                 </form>
 
                 <div class="modal-right-content-wrapper">
                     <b class="modal-right-content-title">Синергія</b>
                     <p class="modal-right-content-description">дитячий садочок</p>
-                    <img tabindex="1" src="public/images/modal-image.png" width="364" height="364" alt="">
+                    <img tabindex="1" src="public/images/modal-image.png" width="364" height="364" alt="Діти">
                 </div>
             </div>
         </div>
