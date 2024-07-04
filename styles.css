@@ -253,6 +253,15 @@ header {
   header {
     min-height: 761px;
   }
+
+  .header-navigation-wrapper {
+    gap: 10px;
+  }
+
+  .mobile-menu-burger {
+    width: 50px;
+    margin-top: 10px;
+  }
 }
 
 /* about us */
@@ -515,7 +524,6 @@ header {
   }
 
   .about-us-subtitle h4 {
-    letter-spacing: -2%;
     font-size: 1.75rem;
     line-height: 112%;
   }
@@ -546,6 +554,17 @@ header {
 
   .about-us-card-title br {
     display: none;
+  }
+
+  .about-us-subtitle {
+    padding: 10px 0px 10px 25px;
+    max-width: 81%;
+    margin-top: 26px;
+    height: 65px;
+  }
+
+  .about-us-subtitle::after {
+    height: 65px;
   }
 }
 /* gallery */
@@ -695,9 +714,11 @@ header {
 
 .benefit-card-description {
   grid-column: span 2;
+  font-weight: 800;
+  line-height: 124%;
   font-size: 1.5rem;
   color: #293746;
-  font-weight: 700;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 1500px) {
@@ -731,6 +752,12 @@ header {
   .benefits-section::before {
     background-image: url("public/images/benefits-mobile-bg.png");
     bottom: -243px;
+  }
+
+  .benefit-card-description {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 115%;
   }
 
   .benefits-title-wrapper {
@@ -951,6 +978,13 @@ header {
   .price-section-header-image {
     max-height: 120px;
     max-width: 140px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .price-section-header-image {
+    max-height: 80px;
+    max-width: 100px;
   }
 }
 
@@ -1355,6 +1389,8 @@ footer {
 
 .footer-right-label:after {
   background-color: var(--primary);
+  border-bottom-left-radius: 23px;
+  border-top-left-radius: 23px;
   position: absolute;
   height: 121px;
   content: "";
@@ -1427,6 +1463,8 @@ footer {
   }
 
   .footer-right-label:after {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
     height: 45px;
   }
 
