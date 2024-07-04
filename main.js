@@ -69,4 +69,8 @@ function main() {
   applyApplicationControl();
 }
 
-main();
+if (document.readyState === "complete") {
+  main();
+} else {
+  window.addEventListener("load", main);
+}
