@@ -28,7 +28,7 @@ function applyApplicationControl() {
     event.stopPropagation();
   });
 
-  window.addEventListener("click", (event) => {
+  document.addEventListener("click", (event) => {
     if (modal.classList.contains("show")) {
       body.classList.remove("open-modal");
       backdrop.classList.remove("show");
@@ -52,12 +52,10 @@ function main() {
   });
 
   headerNavigationWrapper.addEventListener("click", (event) => {
-    alert("headerNavigationWrapper");
     event.stopPropagation();
   });
 
-  window.addEventListener("click", (event) => {
-    alert(`${headerNavigation.classList.contains("mobile")}-${event.target}`);
+  document.addEventListener("click", () => {
     if (headerNavigation.classList.contains("mobile")) {
       headerNavigation.classList.remove("mobile");
       mobileMenuBurger.classList.remove("open");
@@ -69,8 +67,4 @@ function main() {
   applyApplicationControl();
 }
 
-if (document.readyState === "complete") {
-  main();
-} else {
-  window.addEventListener("load", main);
-}
+main();
