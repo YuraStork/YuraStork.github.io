@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 h1,
 h2,
 h3,
@@ -11,75 +10,62 @@ h6,
 p {
   margin: 0;
 }
-
 a {
   text-decoration: none;
   color: #076fd9;
 }
-
 ul,
 ol {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-
 .container {
   max-width: 1710px;
   margin: 0 auto;
 }
-
 html {
   scroll-behavior: smooth;
   font-size: 100%;
 }
-
 :root {
   --primary: #076fd9;
   --white: #fff;
   --black: #000;
 }
-
 body {
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: #fff0;
   font-family: "Montserrat";
 }
-
 @media screen and (max-width: 996px) {
   body {
     background-color: #eae9e8;
   }
 }
-
 body.open-modal {
   overflow: hidden;
 }
-
 .icon-button {
-  background-color: transparent;
+  background-color: #fff0;
   appearance: none;
   border: none;
 }
-
 @media screen and (min-width: 1920px) {
   .container {
     max-width: 1800px;
   }
 }
-
 @media screen and (max-width: 1920px) {
   .container {
     max-width: 95%;
   }
 }
-
 @media screen and (max-width: 720px) {
   .container {
     max-width: 100%;
     padding: 0 37px;
   }
 }
-
 @media screen and (max-width: 680px) {
   .container {
     padding: 0 10px;

@@ -1,47 +1,42 @@
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat"),
-    url("./public/fonts/Montserrat-Medium.woff2") format("woff2"),
-    url("./public/fonts/Montserrat-Medium.ttf") format("truetype");
+    url(./public/fonts/Montserrat-Medium.woff2) format("woff2"),
+    url(./public/fonts/Montserrat-Medium.ttf) format("truetype");
   font-weight: 500;
 }
-
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat-SemiBold"),
-    url("./public/fonts/Montserrat-SemiBold.woff2") format("woff2"),
-    url("./public/fonts/Montserrat-SemiBold.ttf") format("truetype");
+    url(./public/fonts/Montserrat-SemiBold.woff2) format("woff2"),
+    url(./public/fonts/Montserrat-SemiBold.ttf) format("truetype");
   font-weight: 600;
 }
-
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat"),
-    url("./public/fonts/Montserrat-Bold.woff2") format("woff2"),
-    url("./public/fonts/Montserrat-Bold.ttf") format("truetype");
+    url(./public/fonts/Montserrat-Bold.woff2) format("woff2"),
+    url(./public/fonts/Montserrat-Bold.ttf) format("truetype");
   font-weight: 700;
 }
-
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat"),
-    url("./public/fonts/Montserrat-ExtraBold.woff2") format("woff2"),
-    url("./public/fonts/Montserrat-ExtraBold.ttf") format("truetype");
+    url(./public/fonts/Montserrat-ExtraBold.woff2) format("woff2"),
+    url(./public/fonts/Montserrat-ExtraBold.ttf) format("truetype");
   font-weight: 800;
 }
-
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat"),
-    url("./public/fonts/Montserrat-Black.woff2") format("woff2"),
-    url("./public/fonts/Montserrat-Black.ttf") format("truetype");
+    url(./public/fonts/Montserrat-Black.woff2) format("woff2"),
+    url(./public/fonts/Montserrat-Black.ttf) format("truetype");
   font-weight: 900;
 }
-
 @font-face {
   font-family: "Balsamiq Sans";
   src: local("Balsamiq Sans"),
-    url("./public/fonts/BalsamiqSans-Bold.woff2") format("woff2"),
-    url("./public/fonts/BalsamiqSans-Bold.ttf") format("truetype");
+    url(./public/fonts/BalsamiqSans-Bold.woff2) format("woff2"),
+    url(./public/fonts/BalsamiqSans-Bold.ttf) format("truetype");
   font-weight: 700;
 }
