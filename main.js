@@ -40,7 +40,9 @@ function applyApplicationControl() {
 function main() {
   const mobileMenuBurger = document.querySelector("#mobile-menu-burger");
   const headerNavigation = document.querySelector("#header-navigation");
-  const headerNavigationWrapper = document.querySelector("#header-navigation");
+  const headerNavigationWrapper = document.querySelector(
+    ".header-navigation-wrapper"
+  );
 
   mobileMenuBurger.addEventListener("click", (event) => {
     event.stopPropagation();
