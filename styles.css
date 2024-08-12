@@ -463,6 +463,9 @@ header {
   }
 }
 @media screen and (max-width: 576px) {
+  .about-us-section {
+    padding-top: 42px;
+  }
   .about-us-card {
     border-radius: 30px;
     padding: 23px;
@@ -714,6 +717,7 @@ header {
   max-width: 766px;
   display: flex;
   gap: 8px;
+  flex: 1;
 }
 .franchise-header,
 .franchise-footer {
@@ -801,6 +805,8 @@ header {
     display: none;
   }
   .franchises-wrapper {
+    flex-direction: column;
+    align-items: center;
     gap: 50px;
   }
   .franchise {
